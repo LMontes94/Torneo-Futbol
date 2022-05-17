@@ -7,6 +7,7 @@
     --primary: #5381D6;
     --secondary: #2B783D;
     --dark: #080808;
+    --dark2: #34434B;
     --light: #EBEEF3;
 }
 
@@ -32,6 +33,7 @@ body{
   width: 100%;  
   display: flex;
   align-items: flex-end;
+  box-sizing: content-box;
 }
 
 .datos ul li, .user ul li{
@@ -59,4 +61,30 @@ nav a{
     font-size: 24px;
     text-align: center;
     padding: 15px 0 20px 0;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: auto;
+}
+
+.tarjeta{
+   min-width: 250px;
+   min-height: 250px;
+   border-radius: 10%;
+   font-size: 24px;
+   text-align: center;
+   padding: 8px;
+   margin: auto;
+   background-color: var(--secondary);
+   box-shadow: 10px 7px 5px var(--dark2);
+
 }
