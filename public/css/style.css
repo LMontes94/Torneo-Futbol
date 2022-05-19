@@ -6,9 +6,11 @@
 :root{
     --primary: #5381D6;
     --secondary: #2B783D;
+    --third:#293771;
     --dark: #080808;
     --dark2: #34434B;
     --light: #EBEEF3;
+    --light2:#f2ede4;
 }
 
 body{
@@ -16,12 +18,16 @@ body{
 }
 
 .navbar{
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 5px;
     background-color: var(--secondary);
     font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    position: fixed;
+    top: 0;
 }
 
 .datos,.user{
@@ -41,13 +47,19 @@ body{
     margin: 5px 5px 5px 5px; 
 }
 
-nav a{
+.datos a:hover, .user a:hover, .fa-user:hover, .tarjeta a:hover{
+  color: var(--light);
+  text-decoration: underline;
+}
+
+nav a,.tarjeta a {
     text-decoration: none;
     color: var(--dark);
 }
 
 .fa-user{
     text-align: center;
+    font-size: 24px;
     padding: 8px;
     width: 30px;
     height: 30px;
@@ -57,34 +69,15 @@ nav a{
     left: 40px;
 }
 
-.titulo{
-    font-size: 24px;
+.user{
+  padding-right: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 20px;
+    background-color: var(--secondary);
+    font-size: 12px;
     text-align: center;
-    padding: 15px 0 20px 0;
-}
-
-h2{
-    font-size: 20px;
-    text-align: center;
-}
-
-.principal{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 25px;
-    margin: auto;
-}
-
-.tarjeta{
-   min-width: 250px;
-   min-height: 250px;
-   border-radius: 10%;
-   font-size: 24px;
-   text-align: center;
-   padding: 8px;
-   margin: auto;
-   background-color: var(--secondary);
-   box-shadow: 10px 7px 5px var(--dark2);
-
+    margin-top: 75px;
 }

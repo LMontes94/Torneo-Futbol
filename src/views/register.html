@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Futbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="datos">
+            <ul>
+                <li><a href="/info">Info</a></li>
+                <li><a href="/rules">Reglamento</a></li>
+            </ul>
+        </nav>
+        <nav class="user">
+            <a href="/user/login"><i class="fas fa-user"></a></i>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
+    <h2>90º Aniversario</h2>
+    <main>
+        <div class="container">
+            <h4 class="beginning">Registarte</h4>
+            <form action="/user/login" method="POST" class="main-form">
+
+                <div>
+                    <div class="data">
+                        <div class="names">
+                            <input type="text" name="name" placeholder="Nombre" class="name" value="" />
+                            <input type="text" name="surname" placeholder="Apellido" class="surname" value="" />
+                        </div>
+                        <div class="email">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Email" class="mail" value="" />
+                        </div>
+                        <div class="pass">
+                            <label>Contraseña</label>
+                            <input type="password" name="password" placeholder="Contraseña" class="password" value="" />
+                        </div>
+                        <div class="date">
+                            <input type="date" class="date">
+                        </div>
+                        <div class="signin">
+                            <button type="submit" name="sign-in" class="sign-in-tex">
+                                Registrar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h6>Copyright LM5</h6>
+    </footer>
+</body>
+
+</html>

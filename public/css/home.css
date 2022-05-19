@@ -1,0 +1,37 @@
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    margin: 80px auto 10px auto;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.tarjeta{
+   min-width: 250px;
+   min-height: 250px;
+   border-radius: 10%;
+   font-size: 24px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px;
+   margin: 20px auto 20px auto;
+   background-color: var(--secondary);
+   box-shadow: 10px 7px 5px var(--dark2);
+   font-weight: bolder;
+}
+
+.tarjeta:hover{
+    transform: scale(1.2);
+}
