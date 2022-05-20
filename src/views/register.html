@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -34,35 +35,29 @@
     <h2>90º Aniversario</h2>
     <main>
         <div class="container">
-            <h4 class="beginning">Registarte</h4>
-            <form action="/user/login" method="POST" class="main-form">
-
-                <div>
-                    <div class="data">
-                        <div class="names">
-                            <input type="text" name="name" placeholder="Nombre" class="name" value="" />
-                            <input type="text" name="surname" placeholder="Apellido" class="surname" value="" />
-                        </div>
-                        <div class="email">
+            <section class="form-register">
+                <h4>Completa tus datos</h4>
+                <main>
+                    <section>
+                        <form action="/register" method="POST" class="formregister" enctype="multipart/form-data">
+                            <label> Nombre y Apellido</label>
+                            <input type="text" name="name" required placeholder="Nombre y apellido">
                             <label>Email</label>
-                            <input type="email" name="email" placeholder="Email" class="mail" value="" />
-                        </div>
-                        <div class="pass">
+                            <input type="email" name="email" required placeholder="Email">
                             <label>Contraseña</label>
-                            <input type="password" name="password" placeholder="Contraseña" class="password" value="" />
-                        </div>
-                        <div class="date">
-                            <input type="date" class="date">
-                        </div>
-                        <div class="signin">
-                            <button type="submit" name="sign-in" class="sign-in-tex">
-                                Registrar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+                            <input type="password" name="password" required placeholder="Contraseña">
+                            <label>Confirmar contraseña</label>
+                            <input type="password" name="repassword" required placeholder="Confirmar Contraseña">
+                            <label>Fecha de Nacimiento</label>
+                            <input type="date" name="birth" required>
+                            <label>Seleccione Avatar</label>
+                            <input type="file" name="image">
+                            <p><a href='/login'>¿Ya tenés una cuenta? Iniciá sesión</a></p>
+                            <button type="submit">Crear cuenta</button>
+                        </form>
+                    </section>
+                </main>
+            </section>
     </main>
     <footer>
         <h6>Copyright LM5</h6>
