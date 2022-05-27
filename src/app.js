@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const rutasMain = require('./routes/main.js');
 const rutasUsers = require('./routes/user.js');
+const rutasData = require('./routes/data');
 
 const app = express();
 const port = process.env.PORT || 3030;
@@ -18,5 +19,5 @@ app.listen(port, function(){
 
 app.use('/',rutasMain);
 app.use('/user',rutasUsers);
-
+app.use('/data',rutasData);
 

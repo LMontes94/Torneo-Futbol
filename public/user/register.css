@@ -1,0 +1,67 @@
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0 20px 0;
+    margin: 80px auto 15px auto;
+}
+  
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 10px auto 15px auto;
+}
+  
+.container{
+    width: 60%;
+    max-height: 450px;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.register {
+    font-size: 22px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 8px;
+}
+
+.main-form {
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    height: 200px;
+}
+
+.data {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 8px;
+    padding: 5px;
+}
+
+.name, .surname, .mail, .password, .date{
+    width: 250px;
+    border-radius: 5px;
+    height: 22px;
+    margin: 5px auto;
+}
+
+.register-tex {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px auto;
+    width: 200px;
+    background-color: var(--third);
+    text-align: center;
+    color: var(--light2);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+footer{
+    display: none;
+}

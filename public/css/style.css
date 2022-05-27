@@ -30,24 +30,25 @@ body{
     top: 0;
 }
 
-.datos,.user{
+.datos,.user,.data{
    display: flex;
    justify-content: space-between;
 }
 
-.datos ul{
+.datos ul,.data ul{
   width: 100%;  
   display: flex;
   align-items: flex-end;
   box-sizing: content-box;
+  margin-right: 15px;
 }
 
-.datos ul li, .user ul li{
+.datos ul li, .user ul li, .data ul li{
     list-style-type: none;
     margin: 5px 5px 5px 5px; 
 }
 
-.datos a:hover, .user a:hover, .fa-user:hover, .tarjeta a:hover{
+.datos a:hover, .user a:hover, .fa-user:hover, .tarjeta a:hover, .data a:hover{
   color: var(--light);
   text-decoration: underline;
 }
@@ -79,5 +80,5 @@ footer{
     background-color: var(--secondary);
     font-size: 12px;
     text-align: center;
-    margin-top: 75px;
+    margin-top: 30px;
 }

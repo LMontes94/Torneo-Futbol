@@ -24,7 +24,7 @@ h2{
 .options ul{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
 }
 
