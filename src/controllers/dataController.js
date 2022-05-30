@@ -2,19 +2,19 @@ const path = require('path');
 
 const controlador = {
     position:(req,res) =>{
-    res.sendFile(path.join(__dirname,'../views/data/position.html'));
+    res.render(path.join(__dirname,'../views/data/position'));
    },
    calendar:(req,res) =>{
-    res.sendFile(path.join(__dirname,'../views/data/calendar.html'));
+    res.render(path.join(__dirname,'../views/data/calendar'));
    },
    squads:(req,res) =>{
-      res.sendFile(path.join(__dirname,'../views/data/squads.html'));
+      res.render(path.join(__dirname,'../views/data/squads'));
    },
    cards:(req,res) =>{
-    res.sendFile(path.join(__dirname,'../views/data/cards.html'));
+    res.render(path.join(__dirname,'../views/data/cards'));
  },
    statistics:(req,res) =>{
-    res.sendFile(path.join(__dirname,'../views/data/statistics.html'));
+    res.render(path.join(__dirname,'../views/data/statistics'));
  },
 }
 

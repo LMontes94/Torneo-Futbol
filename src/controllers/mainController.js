@@ -2,13 +2,13 @@ const path = require('path');
 
 const controlador = {
    home:(req,res) =>{
-    res.sendFile(path.join(__dirname,'../views/home.html'));
+    res.render(path.join(__dirname,'../views/home'));
    },
    rules:(req,res) =>{
-    res.sendFile(path.join(__dirname,'../views/rules.html'));
+    res.render(path.join(__dirname,'../views/rules'));
    },
    info:(req,res) =>{
-      res.sendFile(path.join(__dirname,'../views/info.html'));
+      res.render(path.join(__dirname,'../views/info'));
    }
 }
 
