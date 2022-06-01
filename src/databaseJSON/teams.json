@@ -2,56 +2,199 @@
     {
         "id":1,
         "name": "All in F.C.",
-        "t-shirt": "blanco y azul"
+        "tshirt": "blanco y azul",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":2,
         "name":"La Rachada",
-        "t-shirt":"negro y rosa"
+        "tshirt":"negro y rosa",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":3,
         "name": "Deportivo La Gambeta",
-        "t-shirt": "rosa y negro"
+        "tshirt": "rosa y negro",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":4,
         "name":"Defensores de Florida",
-        "t-shirt":"verde y blanco"
+        "tshirt":"verde y blanco",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":5,
         "name": "Mayonesa",
-        "t-shirt": "verde"
+        "tshirt": "verde",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":6,
         "name":"Nikosia F.C.",
-        "t-shirt":"negro y azul"
+        "tshirt":"negro y azul",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":7,
         "name": "Deportivo la Vagancia",
-        "t-shirt": "rosa y blanco"
+        "tshirt": "rosa y blanco",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":8,
         "name":"De Taquito F.C.",
-        "t-shirt":"rojo y blanco"
+        "tshirt":"rojo y blanco",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":9,
         "name": "Paris Saint Germain",
-        "t-shirt": "celestes"
+        "tshirt": "celestes",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":10,
         "name":"Celta de Virgo",
-        "t-shirt":"negro y rosa"
+        "tshirt":"negro y rosa",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     },
     {
         "id":11,
         "name": "Estrella Federal",
-        "t-shirt": "blanco y celeste"
+        "tshirt": "blanco y celeste",
+        "jugadores":[{
+            "idJugador": null,
+            "nombre":"",
+            "goles":0,
+            "cards":[{
+                "yellow":0,
+                "red":0
+            }]
+        }],
+        "gaf":0,
+        "gec":0,
+        "df":0,
+        "points":0
     }
 ]
