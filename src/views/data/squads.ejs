@@ -35,7 +35,13 @@
     <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
     <h2>90º Aniversario</h2>
     <h3>Equipos</h3>
-       
+    <main>
+        <% for( let i=0; i < teams.length;i++){ %>
+            <div class="team">
+                <a href="/data/equipos/<%= teams[i].id%>"><%= teams[i].name%></a>
+            </div>
+            <% } %>
+    </main>
     <footer>Copyright LM5</footer>
 </body>
 

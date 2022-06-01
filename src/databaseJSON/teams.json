@@ -1,0 +1,57 @@
+[
+    {
+        "id":1,
+        "name": "All in F.C.",
+        "t-shirt": "blanco y azul"
+    },
+    {
+        "id":2,
+        "name":"La Rachada",
+        "t-shirt":"negro y rosa"
+    },
+    {
+        "id":3,
+        "name": "Deportivo La Gambeta",
+        "t-shirt": "rosa y negro"
+    },
+    {
+        "id":4,
+        "name":"Defensores de Florida",
+        "t-shirt":"verde y blanco"
+    },
+    {
+        "id":5,
+        "name": "Mayonesa",
+        "t-shirt": "verde"
+    },
+    {
+        "id":6,
+        "name":"Nikosia F.C.",
+        "t-shirt":"negro y azul"
+    },
+    {
+        "id":7,
+        "name": "Deportivo la Vagancia",
+        "t-shirt": "rosa y blanco"
+    },
+    {
+        "id":8,
+        "name":"De Taquito F.C.",
+        "t-shirt":"rojo y blanco"
+    },
+    {
+        "id":9,
+        "name": "Paris Saint Germain",
+        "t-shirt": "celestes"
+    },
+    {
+        "id":10,
+        "name":"Celta de Virgo",
+        "t-shirt":"negro y rosa"
+    },
+    {
+        "id":11,
+        "name": "Estrella Federal",
+        "t-shirt": "blanco y celeste"
+    }
+]
