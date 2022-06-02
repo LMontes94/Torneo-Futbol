@@ -20,15 +20,15 @@ main {
   margin: 15px auto;
   padding: 5px;
   display: flex;
- /* flex-direction: column;*/
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .team {
-  width: 200px;
-  height: 50px;
-  margin: 10px;
+  width: 250px;
+  height: 80px;
+  margin: auto;
   border-radius: 5px;
   background-color: var(--secondary);
   display: flex;
@@ -39,3 +39,67 @@ main {
   font-weight: bold;
 }
 
+.logo{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--dark2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.tshirt{
+   background-color: var(--secondary);
+   font-size: 18px;
+   text-align: center;
+   width: 150px;
+   height: 50px;
+   padding: 5px;
+   margin-right: 10px;
+   border-radius: 5px;
+   box-shadow: 5px 7px 5px var(--dark2);
+}
+
+.casaca{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stats{
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: repeat(2,40px);
+  text-align: center;
+  align-items: center;  
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.info-players{
+  width: 100%;
+}
+
+.data-players{
+  display: grid;
+  grid-template-columns: repeat(6, 70px);
+  grid-template-rows: repeat(2,40px); 
+  text-align: center;
+  align-items: center;  
+  justify-content: center;
+  margin: 10px auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}

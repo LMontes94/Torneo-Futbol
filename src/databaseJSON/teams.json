@@ -3,10 +3,11 @@
         "id":1,
         "name": "All in F.C.",
         "logo": "",
-        "tshirt": "blanco y azul",
+        "tshirt": "Blanco y Azul",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -22,10 +23,11 @@
         "id":2,
         "name":"La Rachada",
         "logo": "",
-        "tshirt":"negro y rosa",
+        "tshirt":"Negro y Rosa",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -41,10 +43,11 @@
         "id":3,
         "name": "Deportivo La Gambeta",
         "logo": "",
-        "tshirt": "rosa y negro",
+        "tshirt": "Rosa y Negro",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -60,10 +63,11 @@
         "id":4,
         "name":"Defensores de Florida",
         "logo": "",
-        "tshirt":"verde y blanco",
+        "tshirt":"Verde y Blanco",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -79,10 +83,11 @@
         "id":5,
         "name": "Mayonesa",
         "logo": "",
-        "tshirt": "verde",
+        "tshirt": "Verde",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -98,10 +103,11 @@
         "id":6,
         "name":"Nikosia F.C.",
         "logo": "",
-        "tshirt":"negro y azul",
+        "tshirt":"Negro y Azul",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -117,10 +123,11 @@
         "id":7,
         "name": "Deportivo la Vagancia",
         "logo": "",
-        "tshirt": "rosa y blanco",
+        "tshirt": "Rosa y Blanco",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -136,10 +143,11 @@
         "id":8,
         "name":"De Taquito F.C.",
         "logo": "",
-        "tshirt":"rojo y blanco",
+        "tshirt":"Rojo y Blanco",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -155,10 +163,11 @@
         "id":9,
         "name": "Paris Saint Germain",
         "logo": "",
-        "tshirt": "celestes",
+        "tshirt": "Celestes",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -174,10 +183,11 @@
         "id":10,
         "name":"Celta de Virgo",
         "logo": "",
-        "tshirt":"negro y rosa",
+        "tshirt":"Negro y Rosa",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,
@@ -193,10 +203,11 @@
         "id":11,
         "name": "Estrella Federal",
         "logo": "",
-        "tshirt": "blanco y celeste",
+        "tshirt": "Blanco y Celeste",
         "jugadores":[{
             "idJugador": null,
             "nombre":"",
+            "PJ":0,
             "goles":0,
             "cards":[{
                 "yellow":0,

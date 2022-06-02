@@ -37,26 +37,54 @@
     <h2>90º Aniversario</h2>
     <main>
         <div class="logo">
+            <% if(team.logo === ""){%>
+                <img src="/img/ST90anos.jpg" alt="logo-<%=team.name%>">
+            <% } else {%>
             <img src="<% team.logo%>" alt="logo-<%=team.name%>">
+            <% } %>
         </div>
         <div class="team">
             <%= team.name%>
         </div>
-        <div class="stats">
-            <%= team.gaf%>
-            <%= team.gec%>
-            <%= team.df%>
-            <%= team.points%>
+        <div class="tshirt">
+            <label class="casaca">Color de camiseta:</label>
+           <label><%= team.tshirt%></label>
         </div>
-        <section>
+        <div class="stats">
+            <label>Gaf</label>
+            <label>Gec</label>
+            <label>DF</label>
+            <label>Puntos</label>
+            <label>
+                <%= team.gaf%>
+            </label>
+            <label>
+                <%= team.gec%>
+            </label>
+            <label>
+                <%= team.df%>
+            </label>
+            <label>
+                <%= team.points%>
+            </label>
+        </div>
+        <section class="info-players">
             <h3>Jugadores</h3>
-            <% for( let i=0; i < team.jugadores.length;i++){ %>
-                <div class="players">
-                    <%= team.jugadores[i].nombre%>
-                    <label>Goles</label>
-                    <%= team.jugadores[i].goles%>
-                </div>
-            <% } %>
+            <div class="data-players">
+                <label>#</label>
+                <label>Nombre</label>
+                <label>Pj</label>
+                <label>Goles</label>
+                <label>Amarillas</label>
+                <label>Rojas</label>
+                <% for( let i=0; i < team.jugadores.length;i++){ %>
+                    <div class="players">
+                        <%= team.jugadores[i].id%>
+                        <%= team.jugadores[i].nombre%>
+                        <%= team.jugadores[i].goles%>
+                    </div>
+                    <% } %>
+            </div>
         </section>
     </main>
     <footer>Copyright LM5</footer>
