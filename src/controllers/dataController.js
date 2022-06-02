@@ -1,23 +1,16 @@
 const path = require('path');
-const fs = require('fs');
+const teamJson = require('../databaseJSON/teams');
 
 const controlador = {
     position:(req,res) =>{
     res.render(path.join(__dirname,'../views/data/position'));
    },
    calendar:(req,res) =>{
-    res.render(path.join(__dirname,'../views/data/calendar'));
+   const teams = teamJson.getUsers();
+    res.render(path.join(__dirname,'../views/data/calendar'),{teams: teams});
    },
    teams:(req,res) =>{
-      const archivoTeams = fs.readFileSync(path.resolve(__dirname,'../databaseJSON/teams.json'), {encoding: 'utf-8'});
-      let teams;
-      if(archivoTeams === ""){
-         teams = [];
-      }else{
-         teams = JSON.parse(archivoTeams);
-      }
-       
-      console.log(teams.jugadores);
+      const teams = teamJson.getUsers();
       res.render(path.join(__dirname,'../views/data/teams'),{ teams: teams});
    },
    cards:(req,res) =>{
@@ -28,15 +21,9 @@ const controlador = {
  },
  squad:(req,res) =>{
     
-    const archivoTeams = fs.readFileSync(path.resolve(__dirname,'../databaseJSON/teams.json'), {encoding: 'utf-8'});
-      let teams;
-      if(archivoTeams === ""){
-         teams = [];
-      }else{
-         teams = JSON.parse(archivoTeams);
-      }
+    const archivoTeams = teamJson.getUsers();
 
-      const team = teams[req.params.id-1];
+      const team = archivoTeams[req.params.id-1];
     res.render(path.join(__dirname,'../views/data/squads'),{team:team})
  }
 }

@@ -1,0 +1,54 @@
+[
+    {
+        "fecha": 1,
+        "partido1": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 5,
+                "equipo2": 2
+            }
+        ],
+        "partido2": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Patio",
+                "equipo1": 7,
+                "equipo2": 4
+            }
+        ],
+        "partido3": [
+            {
+                "horario": "7:40hs",
+                "cancha": "Gimnasio",
+                "equipo1": 3,
+                "equipo2": 8
+            }
+        ],
+        "partido4": [
+            {
+                "horario": "7:40hs",
+                "cancha": " Patio",
+                "equipo1": 2,
+                "equipo2": 9
+            }
+        ],
+        "partido5": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 1,
+                "equipo2": 10
+            }
+        ],
+        "libre": 11
+    }
+]
+/*
+MAYONESA  5  VS.  NIKOSIA F.C.  2
+DEPORTIVO FLORIDA 12  VS.  DEPORTIVO LA VAGANCIA  5
+DEPORTIVO LA GAMBETA  8  VS.  DE TAQUITO F.C.  4
+LA RANCHADA  1  VS.  PARIS SAINT GERMAIN  3
+ALL IN F.C.  3  VS.  CELTA  12
+LIBRE:     ESTRELLA FEDERAL
+*/
