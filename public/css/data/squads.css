@@ -20,20 +20,14 @@ main {
   margin: 15px auto;
   padding: 5px;
   display: flex;
-  flex-direction: column;
+ /* flex-direction: column;*/
   justify-content: center;
   align-items: center;
 }
 
-.team a {
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--dark);
-}
-
 .team {
   width: 200px;
-  height: 30px;
+  height: 50px;
   margin: 10px;
   border-radius: 5px;
   background-color: var(--secondary);
@@ -41,13 +35,7 @@ main {
   justify-content: center;
   align-items: center;
   box-shadow: 10px 7px 5px var(--dark2);
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.team a:hover {
-  text-decoration: underline;
-  color: var(--light);
-}
-
-.team:hover{
-    transform: scale(1.3);
-}

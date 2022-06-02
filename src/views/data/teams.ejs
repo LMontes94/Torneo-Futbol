@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/css/data/squads.css">
+    <link rel="stylesheet" href="/css/data/teams.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -28,36 +28,19 @@
                 <li><a href="/data/posiciones">Posiciones</a></li>
                 <li><a href="/data/fairplay">Fair play</a></li>
                 <li><a href="/data/estadisticas">Estadisticas</a></li>
-                <li><a href="/data/equipos">Equipos</a></li>
             </ul>
         </nav>
     </header>
 
     <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
     <h2>90º Aniversario</h2>
+    <h3>Equipos</h3>
     <main>
-        <div class="logo">
-            <img src="<% team.logo%>" alt="logo-<%=team.name%>">
-        </div>
-        <div class="team">
-            <%= team.name%>
-        </div>
-        <div class="stats">
-            <%= team.gaf%>
-            <%= team.gec%>
-            <%= team.df%>
-            <%= team.points%>
-        </div>
-        <section>
-            <h3>Jugadores</h3>
-            <% for( let i=0; i < team.jugadores.length;i++){ %>
-                <div class="players">
-                    <%= team.jugadores[i].nombre%>
-                    <label>Goles</label>
-                    <%= team.jugadores[i].goles%>
-                </div>
+        <% for( let i=0; i < teams.length;i++){ %>
+            <div class="team">
+                <a href="/data/equipos/<%= teams[i].id%>"><%= teams[i].name%></a>
+            </div>
             <% } %>
-        </section>
     </main>
     <footer>Copyright LM5</footer>
 </body>

@@ -2,6 +2,7 @@
     {
         "id":1,
         "name": "All in F.C.",
+        "logo": "",
         "tshirt": "blanco y azul",
         "jugadores":[{
             "idJugador": null,
@@ -20,6 +21,7 @@
     {
         "id":2,
         "name":"La Rachada",
+        "logo": "",
         "tshirt":"negro y rosa",
         "jugadores":[{
             "idJugador": null,
@@ -38,6 +40,7 @@
     {
         "id":3,
         "name": "Deportivo La Gambeta",
+        "logo": "",
         "tshirt": "rosa y negro",
         "jugadores":[{
             "idJugador": null,
@@ -56,6 +59,7 @@
     {
         "id":4,
         "name":"Defensores de Florida",
+        "logo": "",
         "tshirt":"verde y blanco",
         "jugadores":[{
             "idJugador": null,
@@ -74,6 +78,7 @@
     {
         "id":5,
         "name": "Mayonesa",
+        "logo": "",
         "tshirt": "verde",
         "jugadores":[{
             "idJugador": null,
@@ -92,6 +97,7 @@
     {
         "id":6,
         "name":"Nikosia F.C.",
+        "logo": "",
         "tshirt":"negro y azul",
         "jugadores":[{
             "idJugador": null,
@@ -110,6 +116,7 @@
     {
         "id":7,
         "name": "Deportivo la Vagancia",
+        "logo": "",
         "tshirt": "rosa y blanco",
         "jugadores":[{
             "idJugador": null,
@@ -128,6 +135,7 @@
     {
         "id":8,
         "name":"De Taquito F.C.",
+        "logo": "",
         "tshirt":"rojo y blanco",
         "jugadores":[{
             "idJugador": null,
@@ -146,6 +154,7 @@
     {
         "id":9,
         "name": "Paris Saint Germain",
+        "logo": "",
         "tshirt": "celestes",
         "jugadores":[{
             "idJugador": null,
@@ -164,6 +173,7 @@
     {
         "id":10,
         "name":"Celta de Virgo",
+        "logo": "",
         "tshirt":"negro y rosa",
         "jugadores":[{
             "idJugador": null,
@@ -182,6 +192,7 @@
     {
         "id":11,
         "name": "Estrella Federal",
+        "logo": "",
         "tshirt": "blanco y celeste",
         "jugadores":[{
             "idJugador": null,

@@ -4,8 +4,9 @@ const dataController = require('../controllers/dataController.js');
 
 router.get('/posiciones',dataController.position);
 router.get('/fixture',dataController.calendar);
-router.get('/equipos',dataController.squads);
+router.get('/equipos',dataController.teams);
 router.get('/fairplay',dataController.cards);
 router.get('/estadisticas',dataController.statistics);
 
+router.get('/equipos/:id',dataController.squad)
 module.exports = router;
