@@ -36,29 +36,30 @@
     <h2>90º Aniversario</h2>
     <h3>FIXTURE</h3>
     <main>
-        <section class="fecha1">
-        <h4>Fecha 1</h4>
-        <div class="partidos">
-            <div class="equipo"></div>
-            <div class="equipo"></div>
-        </div>
-        <div class="partidos">
-            <div class="equipo"></div>
-            <div class="equipo"></div>
-        </div>
-        <div class="partidos">
-            <div class="equipo"></div>
-            <div class="equipo"></div>
-        </div>
-        <div class="partidos">
-            <div class="equipo"></div>
-            <div class="equipo"></div>
-        </div>
-        <div class="partidos">
-            <div class="equipo"></div>
-            <div class="equipo"></div>
-        </div>
-    </section>
+        <% for (let i = 0; i < fixture.length; i++) { %>
+            <section class="fecha">
+                <h4>
+                    FECHA <%= fixture[i].fecha%>                    
+                </h4>
+                <%= fixture[i].dia%> 
+                <% for (let j = 0; j < fixture[i].partidos.length; j++){ %>
+                <div class="partidos">
+                    
+                    <div class="horario"><label>Horario: </label>
+                        <%= fixture[i].partidos[j].horario%></div>
+                    
+                    <div class="cancha"><label>Cancha: </label>
+                        <%= fixture[i].partidos[j].cancha%></div>
+                    <div class="equipo"><%= teams[(fixture[i].partidos[j].equipo1)-1].name%></div>
+                    <div class="equipo"><%= teams[(fixture[i].partidos[j].equipo2)-1].name%></div>
+                </div>
+            <% } %>
+             
+             <div class="libre"><label>Libre: </label>
+                 <%= teams[(fixture[i].libre)-1].name%></div>
+             
+            </section>
+        <% } %>
     </main>
 
 

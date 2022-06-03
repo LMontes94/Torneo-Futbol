@@ -1,54 +1,261 @@
 [
     {
         "fecha": 1,
-        "partido1": [
+        "dia":"13/05/22",
+        "partidos": [
             {
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 5,
                 "equipo2": 2
-            }
-        ],
-        "partido2": [
+            },
             {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 7,
                 "equipo2": 4
-            }
-        ],
-        "partido3": [
-            {
+            },
+             {
                 "horario": "7:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 3,
                 "equipo2": 8
-            }
-        ],
-        "partido4": [
+            },
             {
                 "horario": "7:40hs",
                 "cancha": " Patio",
                 "equipo1": 2,
                 "equipo2": 9
-            }
-        ],
-        "partido5": [
+            },
             {
-                "horario": "7:00hs",
+                "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 1,
                 "equipo2": 10
             }
         ],
         "libre": 11
+    },
+    {
+        "fecha": 2,
+        "dia":"20/05/22",
+        "partidos": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 4,
+                "equipo2": 5
+            },
+              {
+                "horario": "7:00hs",
+                "cancha": "Patio",
+                "equipo1": 3,
+                "equipo2": 6
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": "Gimnasio",
+                "equipo1": 2,
+                "equipo2": 7
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": " Patio",
+                "equipo1": 1,
+                "equipo2": 8
+            },
+            {
+                "horario": "20:40hs",
+                "cancha": "Gimnasio",
+                "equipo1": 11,
+                "equipo2": 9
+            }
+        ],
+        "libre": 10
+    },
+    {
+        "fecha": 3,
+        "dia":"27/05/22",
+        "partidos": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 3,
+                "equipo2": 4
+            },
+             {
+                "horario": "7:00hs",
+                "cancha": "Patio",
+                "equipo1": 2,
+                "equipo2": 5
+            },
+             {
+                "horario": "7:50hs",
+                "cancha": "Gimnasio",
+                "equipo1": 1,
+                "equipo2": 6
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": " Patio",
+                "equipo1": 11,
+                "equipo2": 7
+            },
+             {
+                "horario": "20:40hs",
+                "cancha": "Gimnasio",
+                "equipo1": 10,
+                "equipo2": 8
+            }
+        ],
+        "libre": 9
+    },
+    {
+        "fecha": 4,
+        "dia":"07/06/22",
+        "partidos": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 2,
+                "equipo2": 3
+            },
+            {
+                "horario": "7:00hs",
+                "cancha": "Patio",
+                "equipo1": 1,
+                "equipo2": 4
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": "Gimnasio",
+                "equipo1": 11,
+                "equipo2": 5
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": " Patio",
+                "equipo1": 10,
+                "equipo2": 6
+            },
+            {
+                "horario": "20:40hs",
+                "cancha": "Gimnasio",
+                "equipo1": 9,
+                "equipo2": 7
+            }
+        ],
+        "libre": 8
+    },
+    {
+        "fecha": 5,
+        "dia":"14/06/22",
+        "partidos": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 1,
+                "equipo2": 2
+            },
+             {
+                "horario": "7:00hs",
+                "cancha": "Patio",
+                "equipo1": 11,
+                "equipo2": 3
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": "Gimnasio",
+                "equipo1": 10,
+                "equipo2": 4
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": " Patio",
+                "equipo1": 9,
+                "equipo2": 5
+            },
+             {
+                "horario": "20:40hs",
+                "cancha": "Gimnasio",
+                "equipo1": 8,
+                "equipo2": 6
+            }
+        ],
+        "libre": 7
+    },
+    {
+        "fecha": 6,
+        "dia":"21/06/22",
+        "partidos": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 11,
+                "equipo2": 1
+            },
+            {
+                "horario": "7:00hs",
+                "cancha": "Patio",
+                "equipo1": 10,
+                "equipo2": 2
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": "Gimnasio",
+                "equipo1": 9,
+                "equipo2": 3
+            },
+             {
+                "horario": "7:50hs",
+                "cancha": " Patio",
+                "equipo1": 8,
+                "equipo2": 4
+            },
+            {
+                "horario": "20:40hs",
+                "cancha": "Gimnasio",
+                "equipo1": 7,
+                "equipo2": 5
+            }
+        ],
+        "libre": 6
+    },
+    {
+        "fecha": 7,
+        "dia":"28/06/22",
+        "partidos": [
+            {
+                "horario": "7:00hs",
+                "cancha": "Gimnasio",
+                "equipo1": 10,
+                "equipo2": 11
+            },
+             {
+                "horario": "7:00hs",
+                "cancha": "Patio",
+                "equipo1": 9,
+                "equipo2": 1
+            },
+            {
+                "horario": "7:50hs",
+                "cancha": "Gimnasio",
+                "equipo1": 8,
+                "equipo2": 2
+            },
+             {
+                "horario": "7:50hs",
+                "cancha": " Patio",
+                "equipo1": 7,
+                "equipo2": 3
+            },
+             {
+                "horario": "20:40hs",
+                "cancha": "Gimnasio",
+                "equipo1": 6,
+                "equipo2": 4
+            }
+        ],
+        "libre": 5
     }
 ]
-/*
-MAYONESA  5  VS.  NIKOSIA F.C.  2
-DEPORTIVO FLORIDA 12  VS.  DEPORTIVO LA VAGANCIA  5
-DEPORTIVO LA GAMBETA  8  VS.  DE TAQUITO F.C.  4
-LA RANCHADA  1  VS.  PARIS SAINT GERMAIN  3
-ALL IN F.C.  3  VS.  CELTA  12
-LIBRE:     ESTRELLA FEDERAL
-*/
