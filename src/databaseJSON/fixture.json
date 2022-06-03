@@ -7,31 +7,41 @@
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 5,
-                "equipo2": 2
+                "equipo2": 2,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 7,
-                "equipo2": 4
+                "equipo2": 4,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "7:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 3,
-                "equipo2": 8
+                "equipo2": 8,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:40hs",
                 "cancha": " Patio",
                 "equipo1": 2,
-                "equipo2": 9
+                "equipo2": 9,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 1,
-                "equipo2": 10
+                "equipo2": 10,
+                "golteam1":0,
+                "golteam2":0
             }
         ],
         "libre": 11
@@ -44,31 +54,41 @@
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 4,
-                "equipo2": 5
+                "equipo2": 5,
+                "golteam1":0,
+                "golteam2":0
             },
               {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 3,
-                "equipo2": 6
+                "equipo2": 6,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 2,
-                "equipo2": 7
+                "equipo2": 7,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 1,
-                "equipo2": 8
+                "equipo2": 8,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 11,
-                "equipo2": 9
+                "equipo2": 9,
+                "golteam1":0,
+                "golteam2":0
             }
         ],
         "libre": 10
@@ -81,31 +101,41 @@
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 3,
-                "equipo2": 4
+                "equipo2": 4,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 2,
-                "equipo2": 5
+                "equipo2": 5,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 1,
-                "equipo2": 6
+                "equipo2": 6,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 11,
-                "equipo2": 7
+                "equipo2": 7,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 10,
-                "equipo2": 8
+                "equipo2": 8,
+                "golteam1":0,
+                "golteam2":0
             }
         ],
         "libre": 9
@@ -118,31 +148,41 @@
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 2,
-                "equipo2": 3
+                "equipo2": 3,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 1,
-                "equipo2": 4
+                "equipo2": 4,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 11,
-                "equipo2": 5
+                "equipo2": 5,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 10,
-                "equipo2": 6
+                "equipo2": 6,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 9,
-                "equipo2": 7
+                "equipo2": 7,
+                "golteam1":0,
+                "golteam2":0
             }
         ],
         "libre": 8
@@ -155,31 +195,41 @@
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 1,
-                "equipo2": 2
+                "equipo2": 2,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 11,
-                "equipo2": 3
+                "equipo2": 3,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 10,
-                "equipo2": 4
+                "equipo2": 4,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 9,
-                "equipo2": 5
+                "equipo2": 5,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 8,
-                "equipo2": 6
+                "equipo2": 6,
+                "golteam1":0,
+                "golteam2":0
             }
         ],
         "libre": 7
@@ -192,31 +242,41 @@
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 11,
-                "equipo2": 1
+                "equipo2": 1,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 10,
-                "equipo2": 2
+                "equipo2": 2,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 9,
-                "equipo2": 3
+                "equipo2": 3,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 8,
-                "equipo2": 4
+                "equipo2": 4,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 7,
-                "equipo2": 5
+                "equipo2": 5,
+                "golteam1":0,
+                "golteam2":0
             }
         ],
         "libre": 6
@@ -229,31 +289,41 @@
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 10,
-                "equipo2": 11
+                "equipo2": 11,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 9,
-                "equipo2": 1
+                "equipo2": 1,
+                "golteam1":0,
+                "golteam2":0
             },
             {
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 8,
-                "equipo2": 2
+                "equipo2": 2,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 7,
-                "equipo2": 3
+                "equipo2": 3,
+                "golteam1":0,
+                "golteam2":0
             },
              {
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 6,
-                "equipo2": 4
+                "equipo2": 4,
+                "golteam1":0,
+                "golteam2":0
             }
         ],
         "libre": 5

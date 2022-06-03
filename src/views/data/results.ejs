@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/data/calendar.css">
+    <link rel="stylesheet" href="/css/data/results.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -35,34 +36,34 @@
     <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
     <h2>90º Aniversario</h2>
     <div class="menu">
-    <h3><a href="/data/fixture">FIXTURE</a></h3>
-    <h3><a href="/data/resultados">RESULTADOS</a></h3>
+        <h3><a href="/data/fixture">FIXTURE</a></h3>
+        <h3><a href="/data/resultados">RESULTADOS</a></h3>
     </div>
     <main>
-        <% for (let i = 0; i < fixture.length; i++) { %>
+        <% for (let i=0; i < fixture.length; i++) { %>
             <section class="fecha">
                 <h4>
-                    FECHA <%= fixture[i].fecha%>                    
+                    FECHA <%= fixture[i].fecha%>
                 </h4>
-                <%= fixture[i].dia%> 
-                <% for (let j = 0; j < fixture[i].partidos.length; j++){ %>
-                <div class="partidos">
-                    
-                    <div class="horario"><label>Horario: </label>
-                        <%= fixture[i].partidos[j].horario%></div>
-                    
-                    <div class="cancha"><label>Cancha: </label>
-                        <%= fixture[i].partidos[j].cancha%></div>
-                    <div class="equipo"><%= teams[(fixture[i].partidos[j].equipo1)-1].name%></div>
-                    <div class="equipo"><%= teams[(fixture[i].partidos[j].equipo2)-1].name%></div>
-                </div>
-            <% } %>
-             
-             <div class="libre"><label>Libre: </label>
-                 <%= teams[(fixture[i].libre)-1].name%></div>
-             
+                <%= fixture[i].dia%>
+                    <% for (let j=0; j < fixture[i].partidos.length; j++){ %>
+                        <div class="partidos">
+                            <div class="equipo">
+                                <%= teams[(fixture[i].partidos[j].equipo1)-1].name%>
+                            </div>
+                            <div class="results">
+                                <%= fixture[i].partidos[j].golteam1%>
+                            </div>
+                            <div class="results">
+                                <%= fixture[i].partidos[j].golteam2%>
+                            </div>
+                            <div class="equipo">
+                                <%= teams[(fixture[i].partidos[j].equipo2)-1].name%>
+                            </div>
+                        </div>
+                        <% } %>
             </section>
-        <% } %>
+            <% } %>
     </main>
 
 

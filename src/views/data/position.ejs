@@ -36,149 +36,31 @@
     <h2>90º Aniversario</h2>
     <div class="tabla">
         <div class="database">
-        <span>#</span>
-        <span>Equipos</span>
-        <span>J</span>
-        <span>G</span>
-        <span>E</span>
-        <span>P</span>
-        <span>AF</span>
-        <span>EC</span>
-        <span>DF</span>
-        <span>PUNTOS</span>
+            <span>#</span>
+            <span>Equipos</span>
+            <span>J</span>
+            <span>G</span>
+            <span>E</span>
+            <span>P</span>
+            <span>AF</span>
+            <span>EC</span>
+            <span>DF</span>
+            <span>PUNTOS</span>
         </div>
-        <div class="team">
-            <span class="position">1</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">2</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">3</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">4</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">5</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">6</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">7</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">8</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">9</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">10</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
-        <div class="team">
-            <span class="position">11</span>
-            <span class="team-name">1</span>
-            <span class="played">1</span>
-            <span class="win">1</span>
-            <span class="draw">1</span>
-            <span class="lose">1</span>
-            <span class="gol-af">1</span>
-            <span class="gol-ec">1</span>
-            <span class="df">1</span>
-            <span class="points">1</span>
-        </div>
+        <% for( let i=0; i < teams.length;i++){ %>
+            <div class="team">
+                <span class="position"><%= i + 1 %></span>
+                <span class="team-name"><%= teams[i].name%></span>
+                <span class="played">1</span>
+                <span class="win">1</span>
+                <span class="draw">1</span>
+                <span class="lose">1</span>
+                <span class="gol-af"><%= teams[i].gaf%></span>
+                <span class="gol-ec"><%= teams[i].gec%></span>
+                <span class="df"><%= teams[i].df%></span>
+                <span class="points"><%= teams[i].points%></span>
+            </div>
+            <% } %>
     </div>
     <footer>Copyright LM5</footer>
 </body>

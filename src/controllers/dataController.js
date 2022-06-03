@@ -6,7 +6,8 @@ const teams_db = path.join(__dirname, '../databaseJSON/teams.json');
 
 const controlador = {
    position: (req, res) => {
-      res.render(path.join(__dirname, '../views/data/position'));
+      const teams = dbJson.getUsers(teams_db);
+      res.render(path.join(__dirname, '../views/data/position'),{teams:teams});
    },
    calendar: (req, res) => {
 
@@ -29,7 +30,13 @@ const controlador = {
       const archivoTeams = dbJson.getUsers(teams_db);
       const team = archivoTeams[req.params.id - 1];
       res.render(path.join(__dirname, '../views/data/squads'), { team: team })
-   }
+   },
+   results: (req, res) => {
+
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+      res.render(path.join(__dirname, '../views/data/results.ejs'), { teams: teams, fixture: fixture });
+   },
 }
 
 module.exports = controlador;
