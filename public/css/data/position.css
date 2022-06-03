@@ -12,11 +12,12 @@ h2 {
 }
 
 .tabla {
-  width: 95%;
-  padding: 10px;
+  width: 60%;
+  padding: 20px;
   margin: auto;
   border-radius: 5px;
   background-color: var(--secondary);
+  box-shadow: 10px 7px 5px 10px var(--dark2);
 }
 
 .database{
@@ -29,6 +30,8 @@ h2 {
   font-weight: bold;
   border: 1px solid var(--dark);
   background-color: var(--light);
+  width: 75%;
+  margin: auto;
 }
 
 .team {
@@ -40,5 +43,10 @@ h2 {
   text-align: center;
   border: 1px solid var(--dark);
   color: var(--light);
+  width: 75%;
+  margin: auto;
 }
 
+.team-name{
+  font-size: 14px;
+}
