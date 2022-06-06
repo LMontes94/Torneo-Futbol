@@ -1,0 +1,32 @@
+main{
+   text-align: center;
+}
+
+.fechas{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--secondary);
+    width: 70%;
+    height: 150px;
+    padding: 5px;
+    margin: 15px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fechas a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.fechas a:hover{
+    text-decoration: underline;
+    color: var(--light);
+}
+
+.fechas:hover{
+    transform: scale(1.3);
+}

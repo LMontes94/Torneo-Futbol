@@ -7,10 +7,14 @@ const rutasData = require('./routes/data');
 const app = express();
 const port = process.env.PORT || 3030;
 
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
 app.set('view engine','ejs');
+
 
 app.listen(port, function(){
 	console.log(`Server running in http://localhost:${port}`);

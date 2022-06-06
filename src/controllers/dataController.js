@@ -7,7 +7,7 @@ const teams_db = path.join(__dirname, '../databaseJSON/teams.json');
 const controlador = {
    position: (req, res) => {
       const teams = dbJson.getUsers(teams_db);
-      res.render(path.join(__dirname, '../views/data/position'),{teams:teams});
+      res.render(path.join(__dirname, '../views/data/position'), { teams: teams });
    },
    calendar: (req, res) => {
 
@@ -37,6 +37,33 @@ const controlador = {
       const fixture = dbJson.getUsers(fixture_db);
       res.render(path.join(__dirname, '../views/data/results.ejs'), { teams: teams, fixture: fixture });
    },
+   fecha: (req, res) => {
+      const fixture = dbJson.getUsers(fixture_db);
+      res.render(path.join(__dirname, '../views/data/fechas.ejs'), { fixture: fixture });
+   },
+   fechaId: (req, res) => {
+
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+
+      const fecha = fixture[req.params.id - 1];
+      res.render(path.join(__dirname, '../views/data/fechaEdit.ejs'), { teams: teams, fecha: fecha });
+   },
+   matchsId: (req, res) => {
+
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+      const nroMatch = req.params.idMatch;
+      const fecha = fixture[req.params.id - 1];
+      const match = fecha.partidos[nroMatch];
+
+      res.render(path.join(__dirname, '../views/data/matchsId.ejs'), { teams: teams, fecha: fecha, match: match,nroMatch:nroMatch });
+   },
+   saveMatchs: (req, res) => {
+      //res.redirect('/data/resultados');
+      console.log(req.body.results2)
+      res.send(req.body.results1)
+   }
 }
 
 module.exports = controlador;

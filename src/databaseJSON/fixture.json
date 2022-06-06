@@ -4,14 +4,16 @@
         "dia":"13/05/22",
         "partidos": [
             {
+                "id":1,
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 5,
-                "equipo2": 2,
+                "equipo2": 6,
                 "golteam1":0,
                 "golteam2":0
             },
             {
+                "id":2,
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 7,
@@ -20,6 +22,7 @@
                 "golteam2":0
             },
              {
+                "id":3,
                 "horario": "7:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 3,
@@ -28,6 +31,7 @@
                 "golteam2":0
             },
             {
+                "id":4,
                 "horario": "7:40hs",
                 "cancha": " Patio",
                 "equipo1": 2,
@@ -36,6 +40,7 @@
                 "golteam2":0
             },
             {
+                "id":5,
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 1,
@@ -51,6 +56,7 @@
         "dia":"20/05/22",
         "partidos": [
             {
+                "id":1,
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 4,
@@ -59,6 +65,7 @@
                 "golteam2":0
             },
               {
+                "id":2,
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 3,
@@ -67,6 +74,7 @@
                 "golteam2":0
             },
             {
+                "id":3,
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 2,
@@ -75,6 +83,7 @@
                 "golteam2":0
             },
             {
+                "id":4,
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 1,
@@ -83,6 +92,7 @@
                 "golteam2":0
             },
             {
+                "id":5,
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 11,
@@ -98,6 +108,7 @@
         "dia":"27/05/22",
         "partidos": [
             {
+                "id":1,
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 3,
@@ -106,6 +117,7 @@
                 "golteam2":0
             },
              {
+                "id":2,
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 2,
@@ -114,6 +126,7 @@
                 "golteam2":0
             },
              {
+                "id":3,
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 1,
@@ -122,6 +135,7 @@
                 "golteam2":0
             },
             {
+                "id":4,
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 11,
@@ -130,6 +144,7 @@
                 "golteam2":0
             },
              {
+                "id":5,
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 10,
@@ -142,9 +157,10 @@
     },
     {
         "fecha": 4,
-        "dia":"07/06/22",
+        "dia":"03/06/22",
         "partidos": [
             {
+                "id":1,
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 2,
@@ -153,6 +169,7 @@
                 "golteam2":0
             },
             {
+                "id":2,
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 1,
@@ -161,6 +178,7 @@
                 "golteam2":0
             },
             {
+                "id":3,
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 11,
@@ -169,6 +187,7 @@
                 "golteam2":0
             },
             {
+                "id":4,
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 10,
@@ -177,6 +196,7 @@
                 "golteam2":0
             },
             {
+                "id":5,
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 9,
@@ -189,9 +209,10 @@
     },
     {
         "fecha": 5,
-        "dia":"14/06/22",
+        "dia":"10/06/22",
         "partidos": [
             {
+                "id":1,
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 1,
@@ -200,6 +221,7 @@
                 "golteam2":0
             },
              {
+                "id":2,
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 11,
@@ -208,6 +230,7 @@
                 "golteam2":0
             },
             {
+                "id":3,
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 10,
@@ -216,6 +239,7 @@
                 "golteam2":0
             },
             {
+                "id":4,
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 9,
@@ -224,6 +248,7 @@
                 "golteam2":0
             },
              {
+                "id":5,
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 8,
@@ -236,9 +261,10 @@
     },
     {
         "fecha": 6,
-        "dia":"21/06/22",
+        "dia":"17/06/22",
         "partidos": [
             {
+                "id":1,
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 11,
@@ -247,6 +273,7 @@
                 "golteam2":0
             },
             {
+                "id":2,
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 10,
@@ -255,6 +282,7 @@
                 "golteam2":0
             },
             {
+                "id":3,
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 9,
@@ -263,6 +291,7 @@
                 "golteam2":0
             },
              {
+                "id":4,
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 8,
@@ -271,6 +300,7 @@
                 "golteam2":0
             },
             {
+                "id":5,
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 7,
@@ -283,9 +313,10 @@
     },
     {
         "fecha": 7,
-        "dia":"28/06/22",
+        "dia":"24/06/22",
         "partidos": [
             {
+                "id":1,
                 "horario": "7:00hs",
                 "cancha": "Gimnasio",
                 "equipo1": 10,
@@ -294,6 +325,7 @@
                 "golteam2":0
             },
              {
+                "id":2,
                 "horario": "7:00hs",
                 "cancha": "Patio",
                 "equipo1": 9,
@@ -302,6 +334,7 @@
                 "golteam2":0
             },
             {
+                "id":3,
                 "horario": "7:50hs",
                 "cancha": "Gimnasio",
                 "equipo1": 8,
@@ -310,6 +343,7 @@
                 "golteam2":0
             },
              {
+                "id":4,
                 "horario": "7:50hs",
                 "cancha": " Patio",
                 "equipo1": 7,
@@ -318,6 +352,7 @@
                 "golteam2":0
             },
              {
+                "id":5,
                 "horario": "20:40hs",
                 "cancha": "Gimnasio",
                 "equipo1": 6,

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Futbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/data/calendar.css">
+    <link rel="stylesheet" href="/css/data/resultsEdit.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="datos">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/rules">Reglamento</a></li>
+            </ul>
+        </nav>
+        <nav class="data">
+            <ul>
+                <li><a href="/data/equipos">Equipos</a></li>
+                <li><a href="/data/posiciones">Posiciones</a></li>
+                <li><a href="/data/fairplay">Fair play</a></li>
+                <li><a href="/data/estadisticas">Estadisticas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
+    <h2>90º Aniversario</h2>
+    <div class="menu">
+        <h3><a href="/data/fixture">FIXTURE</a></h3>
+        <h3><a href="/data/resultados">RESULTADOS</a></h3>
+    </div>
+    <main>
+        <section class="fecha">
+            <h4>
+                FECHA <%= fecha.fecha%>
+            </h4>
+            <%= fecha.dia%>
+                <form method="POST" action="/data/resultados/fecha/<%= fecha.fecha%>/<%= nroMatch%>"
+                    class="fecha-results" enctype="multipart/form-data">
+
+                    <%= teams[(match.equipo1)-1].name%>
+
+
+                    <input type="text" name="results1" class="goals">
+
+
+                    <input type="text" name="results2" class="goals">
+
+
+                    <%= teams[(match.equipo2)-1].name%>
+
+
+
+                    <input type="submit" value="Cargar" class="edit-results">
+
+                </form>
+        </section>
+    </main>
+
+
+    <footer>Copyright LM5</footer>
+</body>
+
+</html>
