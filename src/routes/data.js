@@ -16,5 +16,5 @@ router.get('/equipos/:id',dataController.squad);
 router.get('/resultados/fecha',dataController.fecha);
 router.get('/resultados/fecha/:id',dataController.fechaId);
 router.get('/resultados/fecha/:id/:idMatch',dataController.matchsId);
-router.put('/resultados/fecha/:id/:idMatch',dataController.saveMatchs);
+router.post('/resultados/fecha/:id/:idMatch',dataController.saveMatchs);
 module.exports = router;

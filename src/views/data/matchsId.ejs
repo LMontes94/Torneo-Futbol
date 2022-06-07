@@ -45,22 +45,13 @@
                 FECHA <%= fecha.fecha%>
             </h4>
             <%= fecha.dia%>
-                <form method="POST" action="/data/resultados/fecha/<%= fecha.fecha%>/<%= nroMatch%>"
-                    class="fecha-results" enctype="multipart/form-data">
+                <form action="/data/resultados/fecha/<%= fecha.fecha%>/<%= nroMatch%>" method="POST"
+                    class="fecha-results">
 
                     <%= teams[(match.equipo1)-1].name%>
-
-
                     <input type="text" name="results1" class="goals">
-
-
                     <input type="text" name="results2" class="goals">
-
-
                     <%= teams[(match.equipo2)-1].name%>
-
-
-
                     <input type="submit" value="Cargar" class="edit-results">
 
                 </form>

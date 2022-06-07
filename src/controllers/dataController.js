@@ -60,9 +60,14 @@ const controlador = {
       res.render(path.join(__dirname, '../views/data/matchsId.ejs'), { teams: teams, fecha: fecha, match: match,nroMatch:nroMatch });
    },
    saveMatchs: (req, res) => {
-      //res.redirect('/data/resultados');
-      console.log(req.body.results2)
-      res.send(req.body.results1)
+
+      var fixture = dbJson.getUsers(fixture_db);
+      var goalsteam1 = req.body.results1;
+      var goalsteam2 = req.body.results2;
+      fixture[req.params.id-1].partidos[req.params.idMatch].golteam1 = goalsteam1;
+      fixture[req.params.id-1].partidos[req.params.idMatch].golteam2 = goalsteam2;
+      fixture = dbJson.setUsers(fixture_db,fixture);
+      res.redirect('/data/resultados');
    }
 }
 
