@@ -24,7 +24,7 @@ body{
     padding: 5px;
     background-color: var(--secondary);
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     margin-bottom: 25px;
     position: fixed;
     top: 0;

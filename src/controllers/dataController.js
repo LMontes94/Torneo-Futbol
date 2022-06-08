@@ -1,12 +1,14 @@
 const path = require('path');
 const dbJson = require('../databaseJSON/database');
 const resultados = require('../../public/js/functions/cargarResults');
-const fixture_db = path.resolve(__dirname, '../databaseJSON/fixture.json');
-const teams_db = path.join(__dirname, '../databaseJSON/teams.json');
+const posiciones = require('../../public/js/functions/ordenarTeams');
+const fixture_db = path.resolve(__dirname, '../databaseJSON/fixtureBKup.json');
+const teams_db = path.join(__dirname, '../databaseJSON/teamsBK.json');
 
 const controlador = {
    position: (req, res) => {
-      const teams = dbJson.getUsers(teams_db);
+      var teams = dbJson.getUsers(teams_db);
+      posiciones.ordenarTeams(teams);
       res.render(path.join(__dirname, '../views/data/position'), { teams: teams });
    },
    calendar: (req, res) => {
@@ -64,10 +66,13 @@ const controlador = {
       var fixture = dbJson.getUsers(fixture_db);
       var goalsteam1 = req.body.results1;
       var goalsteam2 = req.body.results2;
-      fixture[req.params.id-1].partidos[req.params.idMatch].golteam1 = goalsteam1;
-      fixture[req.params.id-1].partidos[req.params.idMatch].golteam2 = goalsteam2;
+      var posFixture = req.params.id-1;
+      var posPartido = req.params.idMatch;
+     
+      fixture[posFixture].partidos[posPartido].golteam1 = goalsteam1;
+      fixture[posFixture].partidos[posPartido].golteam2 = goalsteam2;
       fixture = dbJson.setUsers(fixture_db,fixture);
-      resultados.cargarResults();
+      resultados.cargarResults(posFixture,posPartido);
       res.redirect('/data/resultados');
    }
 }

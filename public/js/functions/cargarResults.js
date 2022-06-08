@@ -1,45 +1,42 @@
-const path =require('path');
+const path = require('path');
 const dbJson = require('../../../src/databaseJSON/database');
 
-const fixture_db = path.resolve(__dirname, '../../../src/databaseJSON/fixture.json');
-const teams_db = path.join(__dirname, '../../../src/databaseJSON/teams.json');
+const fixture_db = path.resolve(__dirname, '../../../src/databaseJSON/fixtureBKup.json');
+const teams_db = path.join(__dirname, '../../../src/databaseJSON/teamsBK.json');
 
 module.exports = {
-    cargarResults: () => {
-        const fixture = dbJson.getUsers(fixture_db);
-        const teams = dbJson.getUsers(teams_db);
+    cargarResults: (posFixture, posPartido) => {
+        var fixture = dbJson.getUsers(fixture_db);
+        var teams = dbJson.getUsers(teams_db);
 
-        for (let i = 0; i > fixture.length; i++) {
-            for (let j = 0; j > fixture[i].partidos.length; j++) {
-                fixture[i].partidos[j].golteam1
-                if (fixture[i].partidos[j].golteam1 != "" && fixture[i].partidos[j].golteam2 != "") {
-                    teams[fixture[i].partidos[j].equipo1].pj++;
-                    teams[fixture[i].partidos[j].equipo2].pj++;
-                    teams[fixture[i].partidos[j].equipo1].gaf = fixture[i].partidos[j].golteam1;
-                    teams[fixture[i].partidos[j].equipo2].gaf = fixture[i].partidos[j].golteam2;
-                    teams[fixture[i].partidos[j].equipo1].gec = fixture[i].partidos[j].golteam2;
-                    teams[fixture[i].partidos[j].equipo2].gec = fixture[i].partidos[j].golteam1;
-                    teams[fixture[i].partidos[j].equipo1].df = teams[fixture[i].partidos[j].equipo1].gaf - teams[fixture[i].partidos[j].equipo1].gec;
-                    teams[fixture[i].partidos[j].equipo2].df = teams[fixture[i].partidos[j].equipo2].gaf - teams[fixture[i].partidos[j].equipo2].gec;
+        debugger;
+            teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].pj++;
+            teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].pj++;
+            teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gaf =  parseInt(teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gaf) + parseInt(fixture[posFixture].partidos[posPartido].golteam1);
+            teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].gaf = parseInt(teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].gaf) + parseInt(fixture[posFixture].partidos[posPartido].golteam2);
+            teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gec =  parseInt(teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gec) + parseInt(fixture[posFixture].partidos[posPartido].golteam2);
+            teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].gec = parseInt(teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].gec) + parseInt(fixture[posFixture].partidos[posPartido].golteam1);
+            teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].df =
+                teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gaf - teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gec;
+            teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].df =
+                teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].gaf - teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].gec;
+            console.log((fixture[posFixture].partidos[posPartido].golteam1))
+            console.log(fixture[posFixture].partidos[posPartido].golteam2)
+            if (fixture[posFixture].partidos[posPartido].golteam1 === fixture[posFixture].partidos[posPartido].golteam2) {
+                teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].e++;
+                teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].e++;
 
-                    if (fixture[i].partidos[j].golteam1 === fixture[i].partidos[j].golteam2) {
-                        teams[fixture[i].partidos[j].equipo1].e++;
-                        teams[fixture[i].partidos[j].equipo2].e++;
-
-                        teams[fixture[i].partidos[j].equipo1].points++;
-                        teams[fixture[i].partidos[j].equipo2].points++;
-                    } else if (fixture[i].partidos[j].golteam1 > fixture[i].partidos[j].golteam2) {
-                        teams[fixture[i].partidos[j].equipo1].g++;
-                        teams[fixture[i].partidos[j].equipo2].p++;
-                        teams[fixture[i].partidos[j].equipo1].points = teams[fixture[i].partidos[j].equipo1].points + 3;
-                    } else {
-                        teams[fixture[i].partidos[j].equipo2].g++;
-                        teams[fixture[i].partidos[j].equipo1].p++;
-                        teams[fixture[i].partidos[j].equipo2].points = teams[fixture[i].partidos[j].equipo2].points + 3;
-                    }
-                }
+                teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].points++;
+                teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].points++;
+            } else if (parseInt(fixture[posFixture].partidos[posPartido].golteam1) < parseInt(fixture[posFixture].partidos[posPartido].golteam2)) {
+                teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].p++;
+                teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].g++;
+                teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].points = teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].points + 3;
+            } else {
+                teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].p++;
+                teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].g++;
+                teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].points = teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].points + 3;
             }
-        }
-        dbJson.setUsers(teams_db,teams);
+        teams = dbJson.setUsers(teams_db, teams);
     }
 }

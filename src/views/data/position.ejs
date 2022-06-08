@@ -47,14 +47,14 @@
             <span>DF</span>
             <span>PUNTOS</span>
         </div>
-        <% for( let i=0; i < teams.length;i++){ %>
+        <% for(let i=0; i < teams.length;i++){ %>
             <div class="team">
                 <span class="position"><%= i + 1 %></span>
                 <span class="team-name"><%= teams[i].name%></span>
-                <span class="played">1</span>
-                <span class="win">1</span>
-                <span class="draw">1</span>
-                <span class="lose">1</span>
+                <span class="played"><%= teams[i].pj%></span>
+                <span class="win"><%= teams[i].g%></span>
+                <span class="draw"><%= teams[i].e%></span>
+                <span class="lose"><%= teams[i].p%></span>
                 <span class="gol-af"><%= teams[i].gaf%></span>
                 <span class="gol-ec"><%= teams[i].gec%></span>
                 <span class="df"><%= teams[i].df%></span>
