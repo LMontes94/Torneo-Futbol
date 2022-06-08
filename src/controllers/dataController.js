@@ -2,8 +2,8 @@ const path = require('path');
 const dbJson = require('../databaseJSON/database');
 const resultados = require('../../public/js/functions/cargarResults');
 const posiciones = require('../../public/js/functions/ordenarTeams');
-const fixture_db = path.resolve(__dirname, '../databaseJSON/fixtureBKup.json');
-const teams_db = path.join(__dirname, '../databaseJSON/teamsBK.json');
+const fixture_db = path.resolve(__dirname, '../databaseJSON/fixture.json');
+const teams_db = path.join(__dirname, '../databaseJSON/teams.json');
 
 const controlador = {
    position: (req, res) => {

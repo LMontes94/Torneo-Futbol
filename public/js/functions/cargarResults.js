@@ -1,8 +1,8 @@
 const path = require('path');
 const dbJson = require('../../../src/databaseJSON/database');
 
-const fixture_db = path.resolve(__dirname, '../../../src/databaseJSON/fixtureBKup.json');
-const teams_db = path.join(__dirname, '../../../src/databaseJSON/teamsBK.json');
+const fixture_db = path.resolve(__dirname, '../../../src/databaseJSON/fixture.json');
+const teams_db = path.join(__dirname, '../../../src/databaseJSON/teams.json');
 
 module.exports = {
     cargarResults: (posFixture, posPartido) => {
