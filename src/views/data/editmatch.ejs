@@ -45,15 +45,16 @@
                 FECHA <%= fecha.fecha%>
             </h4>
             <%= fecha.dia%>
-                <% for (let j=0; j < fecha.partidos.length; j++){ %>
-                    <% if(fecha.partidos[j].jugado){%>
-                       
-                         <h5><a href="/data/resultados/fecha/<%= fecha.fecha%>/<%=j%>/edit">Partido <%=j + 1%></a>
-                            </h5>
-                    <%}else{%>
-                            <h5><a href="/data/resultados/fecha/<%= fecha.fecha%>/<%=j%>">Partido <%=j + 1%></a></h5>
-                    <% } %>
-                <% } %>   
+                <form action="/data/resultados/fecha/<%= fecha.fecha%>/<%= nroMatch%>" method="POST"
+                    class="fecha-results">
+
+                    <%= teams[(match.equipo1)-1].name%>
+                    <input type="text" name="results1" class="goals" value="<%= fecha.partidos[nroMatch].golteam1%>">
+                    <input type="text" name="results2" class="goals" value="<%= fecha.partidos[nroMatch].golteam2%>">
+                    <%= teams[(match.equipo2)-1].name%>
+                    <input type="submit" value="Editar" class="edit-results">
+
+                </form>
         </section>
     </main>
 

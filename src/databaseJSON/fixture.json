@@ -10,7 +10,8 @@
         "equipo1": 5,
         "equipo2": 6,
         "golteam1": "5",
-        "golteam2": "2"
+        "golteam2": "2",
+        "jugado": true
       },
       {
         "id": 2,
@@ -19,7 +20,8 @@
         "equipo1": 7,
         "equipo2": 4,
         "golteam1": "5",
-        "golteam2": "12"
+        "golteam2": "12",
+        "jugado": true
       },
       {
         "id": 3,
@@ -28,7 +30,8 @@
         "equipo1": 3,
         "equipo2": 8,
         "golteam1": "8",
-        "golteam2": "4"
+        "golteam2": "4",
+        "jugado": true
       },
       {
         "id": 4,
@@ -37,7 +40,8 @@
         "equipo1": 2,
         "equipo2": 9,
         "golteam1": "1",
-        "golteam2": "3"
+        "golteam2": "3",
+        "jugado": true
       },
       {
         "id": 5,
@@ -46,7 +50,8 @@
         "equipo1": 1,
         "equipo2": 10,
         "golteam1": "3",
-        "golteam2": "12"
+        "golteam2": "12",
+        "jugado": true
       }
     ],
     "libre": 11
@@ -62,7 +67,8 @@
         "equipo1": 4,
         "equipo2": 5,
         "golteam1": "3",
-        "golteam2": "6"
+        "golteam2": "6",
+        "jugado": true
       },
       {
         "id": 2,
@@ -71,7 +77,8 @@
         "equipo1": 3,
         "equipo2": 6,
         "golteam1": "3",
-        "golteam2": "5"
+        "golteam2": "5",
+        "jugado": true
       },
       {
         "id": 3,
@@ -80,7 +87,8 @@
         "equipo1": 2,
         "equipo2": 7,
         "golteam1": "8",
-        "golteam2": "3"
+        "golteam2": "3",
+        "jugado": true
       },
       {
         "id": 4,
@@ -89,7 +97,8 @@
         "equipo1": 1,
         "equipo2": 8,
         "golteam1": "2",
-        "golteam2": "5"
+        "golteam2": "5",
+        "jugado": true
       },
       {
         "id": 5,
@@ -98,7 +107,8 @@
         "equipo1": 11,
         "equipo2": 9,
         "golteam1": "6",
-        "golteam2": "1"
+        "golteam2": "1",
+        "jugado": true
       }
     ],
     "libre": 10
@@ -114,7 +124,8 @@
         "equipo1": 3,
         "equipo2": 4,
         "golteam1": "1",
-        "golteam2": "7"
+        "golteam2": "7",
+        "jugado": true
       },
       {
         "id": 2,
@@ -123,7 +134,8 @@
         "equipo1": 2,
         "equipo2": 5,
         "golteam1": "2",
-        "golteam2": "3"
+        "golteam2": "3",
+        "jugado": true
       },
       {
         "id": 3,
@@ -132,7 +144,8 @@
         "equipo1": 1,
         "equipo2": 6,
         "golteam1": "3",
-        "golteam2": "1"
+        "golteam2": "1",
+        "jugado": true
       },
       {
         "id": 4,
@@ -141,7 +154,8 @@
         "equipo1": 11,
         "equipo2": 7,
         "golteam1": "7",
-        "golteam2": "3"
+        "golteam2": "3",
+        "jugado": true
       },
       {
         "id": 5,
@@ -150,7 +164,8 @@
         "equipo1": 10,
         "equipo2": 8,
         "golteam1": "5",
-        "golteam2": "1"
+        "golteam2": "1",
+        "jugado": true
       }
     ],
     "libre": 9
@@ -166,7 +181,8 @@
         "equipo1": 2,
         "equipo2": 3,
         "golteam1": "2",
-        "golteam2": "0"
+        "golteam2": "0",
+        "jugado": true
       },
       {
         "id": 2,
@@ -175,7 +191,8 @@
         "equipo1": 1,
         "equipo2": 4,
         "golteam1": "4",
-        "golteam2": "4"
+        "golteam2": "4",
+        "jugado": true
       },
       {
         "id": 3,
@@ -184,7 +201,8 @@
         "equipo1": 11,
         "equipo2": 5,
         "golteam1": "3",
-        "golteam2": "2"
+        "golteam2": "2",
+        "jugado": true
       },
       {
         "id": 4,
@@ -193,7 +211,8 @@
         "equipo1": 10,
         "equipo2": 6,
         "golteam1": "7",
-        "golteam2": "1"
+        "golteam2": "1",
+        "jugado": true
       },
       {
         "id": 5,
@@ -202,7 +221,8 @@
         "equipo1": 9,
         "equipo2": 7,
         "golteam1": "3",
-        "golteam2": "3"
+        "golteam2": "3",
+        "jugado": true
       }
     ],
     "libre": 8
@@ -218,7 +238,8 @@
         "equipo1": 1,
         "equipo2": 2,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 2,
@@ -227,7 +248,8 @@
         "equipo1": 11,
         "equipo2": 3,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 3,
@@ -236,7 +258,8 @@
         "equipo1": 10,
         "equipo2": 4,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 4,
@@ -245,7 +268,8 @@
         "equipo1": 9,
         "equipo2": 5,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 5,
@@ -254,7 +278,8 @@
         "equipo1": 8,
         "equipo2": 6,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       }
     ],
     "libre": 7
@@ -270,7 +295,8 @@
         "equipo1": 11,
         "equipo2": 1,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 2,
@@ -279,7 +305,8 @@
         "equipo1": 10,
         "equipo2": 2,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 3,
@@ -288,7 +315,8 @@
         "equipo1": 9,
         "equipo2": 3,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 4,
@@ -297,7 +325,8 @@
         "equipo1": 8,
         "equipo2": 4,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 5,
@@ -306,7 +335,8 @@
         "equipo1": 7,
         "equipo2": 5,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       }
     ],
     "libre": 6
@@ -322,7 +352,8 @@
         "equipo1": 10,
         "equipo2": 11,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 2,
@@ -331,7 +362,8 @@
         "equipo1": 9,
         "equipo2": 1,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 3,
@@ -340,7 +372,8 @@
         "equipo1": 8,
         "equipo2": 2,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 4,
@@ -349,7 +382,8 @@
         "equipo1": 7,
         "equipo2": 3,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       },
       {
         "id": 5,
@@ -358,7 +392,8 @@
         "equipo1": 6,
         "equipo2": 4,
         "golteam1": "",
-        "golteam2": ""
+        "golteam2": "",
+        "jugado": false
       }
     ],
     "libre": 5

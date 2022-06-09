@@ -74,7 +74,17 @@ const controlador = {
       fixture = dbJson.setUsers(fixture_db,fixture);
       resultados.cargarResults(posFixture,posPartido);
       res.redirect('/data/resultados');
-   }
+   },
+   showMatch: (req, res) => {
+
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+      const nroMatch = req.params.idMatch;
+      const fecha = fixture[req.params.id - 1];
+      const match = fecha.partidos[nroMatch];
+
+      res.render(path.join(__dirname, '../views/data/editmatch.ejs'), { teams: teams, fecha: fecha, match: match,nroMatch:nroMatch });
+   },
 }
 
 module.exports = controlador;
