@@ -49,7 +49,7 @@ const controlador = {
       const fixture = dbJson.getUsers(fixture_db);
 
       const fecha = fixture[req.params.id - 1];
-      res.render(path.join(__dirname, '../views/data/fechaEdit.ejs'), { teams: teams, fecha: fecha });
+      res.render(path.join(__dirname, '../views/data/resultsEdit.ejs'), { teams: teams, fecha: fecha });
    },
    matchsId: (req, res) => {
 
@@ -84,6 +84,14 @@ const controlador = {
       const match = fecha.partidos[nroMatch];
 
       res.render(path.join(__dirname, '../views/data/editmatch.ejs'), { teams: teams, fecha: fecha, match: match,nroMatch:nroMatch });
+   },
+   agregarFecha: (req, res) => {
+
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+
+      const partidos = fixture[0].partidos.length;
+      res.render(path.join(__dirname, '../views/data/addFecha.ejs'), { teams: teams, partidos: partidos });
    },
 }
 

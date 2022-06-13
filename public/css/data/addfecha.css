@@ -1,0 +1,5 @@
+.partidos,.libre{
+    background-color: var(--secondary);
+    padding: 5px;
+    margin: 20px auto;
+}
