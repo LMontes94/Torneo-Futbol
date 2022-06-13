@@ -237,9 +237,9 @@
         "cancha": "Gimnasio",
         "equipo1": 1,
         "equipo2": 2,
-        "golteam1": "",
-        "golteam2": "",
-        "jugado": false
+        "golteam1": "5",
+        "golteam2": "2",
+        "jugado": true
       },
       {
         "id": 2,
@@ -247,9 +247,9 @@
         "cancha": "Patio",
         "equipo1": 11,
         "equipo2": 3,
-        "golteam1": "",
-        "golteam2": "",
-        "jugado": false
+        "golteam1": "7",
+        "golteam2": "5",
+        "jugado": true
       },
       {
         "id": 3,
@@ -257,9 +257,9 @@
         "cancha": "Gimnasio",
         "equipo1": 10,
         "equipo2": 4,
-        "golteam1": "",
-        "golteam2": "",
-        "jugado": false
+        "golteam1": "3",
+        "golteam2": "3",
+        "jugado": true
       },
       {
         "id": 4,
@@ -267,9 +267,9 @@
         "cancha": " Patio",
         "equipo1": 9,
         "equipo2": 5,
-        "golteam1": "",
-        "golteam2": "",
-        "jugado": false
+        "golteam1": "4",
+        "golteam2": "8",
+        "jugado": true
       },
       {
         "id": 5,
@@ -277,9 +277,9 @@
         "cancha": "Gimnasio",
         "equipo1": 8,
         "equipo2": 6,
-        "golteam1": "",
-        "golteam2": "",
-        "jugado": false
+        "golteam1": "1",
+        "golteam2": "3",
+        "jugado": true
       }
     ],
     "libre": 7

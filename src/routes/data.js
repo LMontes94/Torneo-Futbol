@@ -16,6 +16,7 @@ router.get('/resultados/fecha/:id',dataController.fechaId);
 router.get('/resultados/fecha/:id/:idMatch',dataController.matchsId);
 router.post('/resultados/fecha/:id/:idMatch',dataController.saveMatchs);
 router.get('/resultados/fecha/:id/:idMatch/edit',dataController.showMatch);
+router.get('/resultados/agregar',dataController.agregarFecha);
 //router.put('/resultados/fecha/:id/:idMatch/edit',dataController.editMatchs);
 
 router.get('/equipos/:id/edit',dataController.editSquad);

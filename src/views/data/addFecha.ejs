@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/data/calendar.css">
-    <link rel="stylesheet" href="/css/data/fechas.css">
+    <link rel="stylesheet" href="/css/data/addfecha.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -40,17 +40,31 @@
         <h3><a href="/data/resultados">RESULTADOS</a></h3>
     </div>
     <main>
-        <% for (let i=0; i < fixture.length; i++)
-            { %>
-            <div class="fechas">
-                <a href="/data/resultados/fecha/<%= fixture[i].fecha%>">FECHA <%= fixture[i].fecha%></a>
-            </div>
-        <% } %>
-                <a href="/data/resultados/agregar"><input type="submit" value="Agregar Fecha"
-                        class="agregar-fecha"></a>
+        <form action="data/resultados/fecha/agregar" method="POST">
+            <label for="">Fecha </label>
+            <label for="dia">Dia</label>
+            <input type="date" name="date">
+            <label for="partidos">Partidos</label>
+
+            <% for (let i=0; i < partidos; i++) { %>
+                <div class="partidos">
+                    <label for="">Horaio</label>
+                    <input type="time" name="time">
+                    <label for="cancha">Cancha</label>
+                    <input type="text" name="cancha">
+                    <label for="team1">Equipos</label>
+                    <input type="text" name="team1">
+                    <input type="text" name="team2">
+                </div>
+                <% } %>
+                    <div class="libre">
+                        <label for="libre">Libre</label>
+                        <input type="text" name="libre">
+                    </div>
+
+                    <input type="submit" value="Cargar Fecha">
+        </form>
     </main>
-
-
     <footer>Copyright LM5</footer>
 </body>
 
