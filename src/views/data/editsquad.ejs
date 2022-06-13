@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Futbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/data/squads.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="datos">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/rules">Reglamento</a></li>
+            </ul>
+        </nav>
+        <nav class="data">
+            <ul>
+                <li><a href="/data/fixture">Fixture</a></li>
+                <li><a href="/data/posiciones">Posiciones</a></li>
+                <li><a href="/data/fairplay">Fair play</a></li>
+                <li><a href="/data/estadisticas">Estadisticas</a></li>
+                <li><a href="/data/equipos">Equipos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
+    <h2>90º Aniversario</h2>
+    <main>
+        <div class="logo">
+            <% if(team.logo === ""){%>
+                <img src="/img/ST90anos.jpg" alt="logo-<%=team.name%>">
+            <% } else {%>
+            <img src="<% team.logo%>" alt="logo-<%=team.name%>">
+            <% } %>
+        </div>
+        <div class="team">
+            <%= team.name%>
+        </div>
+        <div class="tshirt">
+            <label class="casaca">Color de camiseta:</label>
+           <label><%= team.tshirt%></label>
+        </div>
+        <div class="stats">
+            <label>Gaf</label>
+            <label>Gec</label>
+            <label>DF</label>
+            <label>Puntos</label>
+            <label>
+                <%= team.gaf%>
+            </label>
+            <label>
+                <%= team.gec%>
+            </label>
+            <label>
+                <%= team.df%>
+            </label>
+            <label>
+                <%= team.points%>
+            </label>
+        </div>
+        <section class="info-players">
+            <h3>Jugadores</h3>
+            <div class="data-players">
+                <label>#</label>
+                <label>Nombre</label>
+                <label>Pj</label>
+                <label>Goles</label>
+                <label>Amarillas</label>
+                <label>Rojas</label>
+                <% for( let i=0; i < team.jugadores.length;i++){ %>
+                    <div class="players">
+                        <%= team.jugadores[i].id%>
+                        <%= team.jugadores[i].nombre%>
+                        <%= team.jugadores[i].goles%>
+                    </div>
+                    <% } %>
+            </div>
+        </section>
+        <form action="/equipos/<%= team.id%>?_method=PUT"  method="POST">
+            <input type="submit" value="Editar jugador">
+        </form>
+        <form action="/products/<%= team.id%>?_method=DELETE" method="POST" enctype="multipart/form-data"></form>
+    </main>
+    <footer>Copyright LM5</footer>
+</body>
+
+</html>

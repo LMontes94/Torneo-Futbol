@@ -12,7 +12,6 @@ const controlador = {
       res.render(path.join(__dirname, '../views/data/position'), { teams: teams });
    },
    calendar: (req, res) => {
-
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
       res.render(path.join(__dirname, '../views/data/calendar'), { teams: teams, fixture: fixture });
@@ -84,6 +83,12 @@ const controlador = {
       const match = fecha.partidos[nroMatch];
 
       res.render(path.join(__dirname, '../views/data/editmatch.ejs'), { teams: teams, fecha: fecha, match: match,nroMatch:nroMatch });
+   },
+   editSquad: (req, res) => {
+
+      const archivoTeams = dbJson.getUsers(teams_db);
+      const team = archivoTeams[req.params.id - 1];
+      res.render(path.join(__dirname, '../views/data/squads'), { team: team })
    },
 }
 

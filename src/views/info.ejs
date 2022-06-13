@@ -2,30 +2,58 @@
 <html lang="en">
 
 <%- include('./partials/head.ejs')%>
-<link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/info.css">
 
-<body>
-    <header class="navbar">
-        <nav class="datos">
-            <ul>
-                <li><a href="/info">Info</a></li>
-                <li><a href="/rules">Reglamento</a></li>
-            </ul>
-        </nav>
-        <nav class="user">
-            <a href="/user/login"><i class="fas fa-user"></a></i>
-            <ul>
-                <li><a href="/user/register">Registrarse</a></li>
-                <li><a href="/user/login">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header class="navbar">
+            <nav class="datos">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/rules">Reglamento</a></li>
+                </ul>
+            </nav>
+            <nav class="user">
+                <a href="/user/login"><i class="fas fa-user"></a></i>
+                <ul>
+                    <li><a href="/user/register">Registrarse</a></li>
+                    <li><a href="/user/login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
-    <h2>90º Aniversario</h2>
+        <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
+        <h2>90º Aniversario</h2>
 
-
-    <footer>Copyright LM5</footer>
-</body>
+        <main>
+            <div class="ingreso">
+               <b>Ingreso al Colegio:</b>  A las 19.00 hs. (Entrada en calor y completar la planilla de juego.)
+            </div>
+            <div class="horarios">
+              <b>Horaios: 19.10 hs.- A(GIM) / B (PATIO) 20.00 hs.- C (GIM) / D (PATIO) 20.50 hs.- E (GIM)</b>
+            </div>
+            <div class="inscripcion">
+               <b>INSCRIPCION AL TORNEO</b> EL 6/5/22 $ 6.000.- ANTES DE COMENZAR EL MISMO 
+            </div>
+            <div class="pago-cancha">
+                SE DEBERAN ABONAR $ 3.000.- ANTES DE EMPEZAR CADA FECHA DE JUEGO.
+            </div>
+            <div class="obligatorio">
+              <b>SERÁ OBLIGATORIO:</b> USO DE CAMISETA IDENTIFICATORIA CON NUMERACIÓN NO REPETIDA, PANTALON CORTO, MEDIAS Y
+                DE SER POSIBLE CANILLERAS. EL TORNEO ES EXCLUSIVO PARA EXALUMNOS DEL SANTA Y DOCENTES DE EXALUMNOS
+            </div>
+            <div class="premios">
+               <b>PREMIOS:</b> “MEDALLAS AL CAMPEON, PREMIO A LA VALLA MENOR VENCIDA Y AL GOLEADOR”.
+            </div>
+            <div class="mensaje">
+               <b>SOLICITAMOS POR FAVOR CUIDAR TODAS LAS INSTALACIONES DEL COLEGIO, NOTIFICANDO QUE QUEDA PROHIBIDO EL
+                FUMAR DENTRO DEL ESTABLECIMIENTO.</b>
+            </div>
+            <div class="saludo">
+                MUCHAS GRACIAS POR SU COLABORACION!.
+            </div>
+        </main>
+        <footer>Copyright LM5</footer>
+    </body>
 
 </html>

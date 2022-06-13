@@ -10,13 +10,16 @@ router.get('/estadisticas',dataController.statistics);
 router.get('/resultados',dataController.results);
 router.get('/equipos/:id',dataController.squad);
 
-//router.put('/equipos/:id',dataController.editSquad);
-//router.post('/equipos',dataController.crearTeam);
-//router.delete('/equipos', dataController.deleteTeam);
+
 router.get('/resultados/fecha',dataController.fecha);
 router.get('/resultados/fecha/:id',dataController.fechaId);
 router.get('/resultados/fecha/:id/:idMatch',dataController.matchsId);
 router.post('/resultados/fecha/:id/:idMatch',dataController.saveMatchs);
 router.get('/resultados/fecha/:id/:idMatch/edit',dataController.showMatch);
 //router.put('/resultados/fecha/:id/:idMatch/edit',dataController.editMatchs);
+
+router.get('/equipos/:id/edit',dataController.editSquad);
+//router.put('/equipos/:id',dataController.actualizarSquad);
+//router.post('/equipos/create',dataController.crearTeam);
+//router.delete('/equipos/:id', dataController.deleteTeam);
 module.exports = router;
