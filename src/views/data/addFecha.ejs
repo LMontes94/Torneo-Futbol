@@ -41,14 +41,19 @@
     </div>
     <main>
         <form action="data/resultados/fecha/agregar" method="POST">
-            <label for="">Fecha </label>
-            <label for="dia">Dia</label>
-            <input type="date" name="date">
-            <label for="partidos">Partidos</label>
-
+            <div class="date">
+                <label for="">Fecha </label>
+            </div>
+            <div class="day">
+                <label for="dia">Dia</label>
+                <input type="date" name="date">
+            </div>
+            <div class="partidos">
+                <label for="partidos">Partidos</label>
+            </div>
             <% for (let i=0; i < partidos; i++) { %>
                 <div class="partidos">
-                    <label for="">Horaio</label>
+                    <label for="">Horario</label>
                     <input type="time" name="time">
                     <label for="cancha">Cancha</label>
                     <input type="text" name="cancha">
@@ -57,12 +62,13 @@
                     <input type="text" name="team2">
                 </div>
                 <% } %>
-                    <div class="libre">
+                    <div class="free">
                         <label for="libre">Libre</label>
                         <input type="text" name="libre">
                     </div>
-
-                    <input type="submit" value="Cargar Fecha">
+                    <div class="boton">
+                        <input type="submit" value="Cargar Fecha" class="load-date">
+                    </div>
         </form>
     </main>
     <footer>Copyright LM5</footer>

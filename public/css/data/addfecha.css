@@ -1,5 +1,35 @@
-.partidos,.libre{
-    background-color: var(--secondary);
+main{
+  width: 90%;
+  background-color: var(--secondary);
+  margin: auto;
+  border-radius: 5px;
+}
+
+.date{
+   margin: 10px 10px;
+   font-size: 22px;
+   text-align: center;
+   font-weight: bold;
+}
+
+.partidos,.free,.day,.boton{
+    width: 80%;
     padding: 5px;
     margin: 20px auto;
+    text-align: center;
+}
+
+label{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.load-date{
+    height: 30px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--third);
+    color: var(--light);
+    border-radius: 5px;
 }
