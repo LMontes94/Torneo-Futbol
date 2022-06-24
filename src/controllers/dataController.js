@@ -58,20 +58,20 @@ const controlador = {
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/matchsId.ejs'), { teams: teams, fecha: fecha, match: match,nroMatch:nroMatch });
+      res.render(path.join(__dirname, '../views/data/matchsId.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
    },
    saveMatchs: (req, res) => {
 
       var fixture = dbJson.getUsers(fixture_db);
       var goalsteam1 = req.body.results1;
       var goalsteam2 = req.body.results2;
-      var posFixture = req.params.id-1;
+      var posFixture = req.params.id - 1;
       var posPartido = req.params.idMatch;
-     
+
       fixture[posFixture].partidos[posPartido].golteam1 = goalsteam1;
       fixture[posFixture].partidos[posPartido].golteam2 = goalsteam2;
-      fixture = dbJson.setUsers(fixture_db,fixture);
-      resultados.cargarResults(posFixture,posPartido);
+      fixture = dbJson.setUsers(fixture_db, fixture);
+      resultados.cargarResults(posFixture, posPartido);
       res.redirect('/data/resultados');
    },
    showMatch: (req, res) => {
@@ -82,7 +82,7 @@ const controlador = {
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/editmatch.ejs'), { teams: teams, fecha: fecha, match: match,nroMatch:nroMatch });
+      res.render(path.join(__dirname, '../views/data/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
    },
    editSquad: (req, res) => {
 
@@ -98,6 +98,80 @@ const controlador = {
       const partidos = fixture[0].partidos.length;
       res.render(path.join(__dirname, '../views/data/addFecha.ejs'), { teams: teams, partidos: partidos });
    },
-}
+   cargarFecha: (req, res) => {
 
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+      let cantPartidos = fixture.partidos[0].length;
+      let idTeam = 0;
+      let newFecha = req.body;
+      let newPartidos = [
+         {
+            fecha: 5,
+            dia: "10/06/22",
+            partidos: [
+               {
+                  id: 0,
+                  horario: "",
+                  cancha: "",
+                  equipo1: "",
+                  equipo2: "",
+                  golteam1: "",
+                  golteam2: "",
+                  jugado: false
+               },
+               {
+                  id: 0,
+                  horario: "",
+                  cancha: "",
+                  equipo1: "",
+                  equipo2: "",
+                  golteam1: "",
+                  golteam2: "",
+                  jugado: false
+               },
+               {
+                  id: 0,
+                  horario: "",
+                  cancha: "",
+                  equipo1: "",
+                  equipo2: "",
+                  golteam1: "",
+                  golteam2: "",
+                  jugado: false
+               },{
+                  id: 0,
+                  horario: "",
+                  cancha: "",
+                  equipo1: "",
+                  equipo2: "",
+                  golteam1: "",
+                  golteam2: "",
+                  jugado: false
+               },
+               {
+                  id: 0,
+                  horario: "",
+                  cancha: "",
+                  equipo1: "",
+                  equipo2: "",
+                  golteam1: "",
+                  golteam2: "",
+                  jugado: false
+               }
+            ]
+         }
+      ]
+
+      for(let i = 0; i < cantPartidos; i++){
+         newPartidos.id = i + 1;
+         newPartidos.partidos[i].horario = newFecha.time; 
+         newPartidos.partidos[i].cancha = newFecha.cancha;
+         idTeam = teams.filter();
+         newPartidos.partidos[i].equipo1 = newFecha
+      }
+      console.log(newPartidos);
+      res.redirect('/data/resultados/fecha');
+   }
+}
 module.exports = controlador;
