@@ -102,16 +102,17 @@ const controlador = {
 
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
-      let cantPartidos = fixture.partidos[0].length;
-      let idTeam = 0;
+      let cantPartidos = 5;
+      let team1;
+      let team2;
       let newFecha = req.body;
       let newPartidos = [
          {
             fecha: 5,
-            dia: "10/06/22",
+            dia: "",
             partidos: [
                {
-                  id: 0,
+                  id: 1,
                   horario: "",
                   cancha: "",
                   equipo1: "",
@@ -121,7 +122,7 @@ const controlador = {
                   jugado: false
                },
                {
-                  id: 0,
+                  id: 2,
                   horario: "",
                   cancha: "",
                   equipo1: "",
@@ -131,7 +132,7 @@ const controlador = {
                   jugado: false
                },
                {
-                  id: 0,
+                  id: 3,
                   horario: "",
                   cancha: "",
                   equipo1: "",
@@ -140,7 +141,7 @@ const controlador = {
                   golteam2: "",
                   jugado: false
                },{
-                  id: 0,
+                  id: 4,
                   horario: "",
                   cancha: "",
                   equipo1: "",
@@ -150,7 +151,7 @@ const controlador = {
                   jugado: false
                },
                {
-                  id: 0,
+                  id: 5,
                   horario: "",
                   cancha: "",
                   equipo1: "",
@@ -159,7 +160,8 @@ const controlador = {
                   golteam2: "",
                   jugado: false
                }
-            ]
+            ],
+            libre:""
          }
       ]
 
@@ -167,9 +169,13 @@ const controlador = {
          newPartidos.id = i + 1;
          newPartidos.partidos[i].horario = newFecha.time; 
          newPartidos.partidos[i].cancha = newFecha.cancha;
-         idTeam = teams.filter();
-         newPartidos.partidos[i].equipo1 = newFecha
+         team1 = teams.filter(team => team.name == newFecha.name);
+         team2 = teams.filter(team => team.name == newFecha.name);
+         newPartidos.partidos[i].equipo1 = team1.id;
+         newPartidos.partidos[i].equipo2 = team2.id
       }
+      let free = teams.fliter(team => team.name == newFecha.libre);
+      newPartidos.libre = free.id;
       console.log(newPartidos);
       res.redirect('/data/resultados/fecha');
    }
