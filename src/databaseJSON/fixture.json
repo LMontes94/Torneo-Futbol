@@ -397,5 +397,63 @@
       }
     ],
     "libre": 5
+  },
+  {
+    "fecha": 8,
+    "dia": "",
+    "partidos": [
+      {
+        "id": 1,
+        "horario": "19:10",
+        "cancha": "Gimnasio",
+        "equipo1": 9,
+        "equipo2": 10,
+        "golteam1": "",
+        "golteam2": "",
+        "jugado": false
+      },
+      {
+        "id": 2,
+        "horario": "19:10",
+        "cancha": "Patio",
+        "equipo1": 8,
+        "equipo2": 11,
+        "golteam1": "",
+        "golteam2": "",
+        "jugado": false
+      },
+      {
+        "id": 3,
+        "horario": "19:40",
+        "cancha": "Gimnasio",
+        "equipo1": 7,
+        "equipo2": 1,
+        "golteam1": "",
+        "golteam2": "",
+        "jugado": false
+      },
+      {
+        "id": 4,
+        "horario": "19:40",
+        "cancha": "Patio",
+        "equipo1": 6,
+        "equipo2": 2,
+        "golteam1": "",
+        "golteam2": "",
+        "jugado": false
+      },
+      {
+        "id": 5,
+        "horario": "20:40",
+        "cancha": "Gimnasio",
+        "equipo1": 5,
+        "equipo2": 3,
+        "golteam1": "",
+        "golteam2": "",
+        "jugado": false
+      }
+    ],
+    "libre": 4,
+    "id": 5
   }
 ]

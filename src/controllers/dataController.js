@@ -4,6 +4,7 @@ const resultados = require('../../public/js/functions/cargarResults');
 const posiciones = require('../../public/js/functions/ordenarTeams');
 const fixture_db = path.resolve(__dirname, '../databaseJSON/fixture.json');
 const teams_db = path.join(__dirname, '../databaseJSON/teams.json');
+const buscarTeams = require('../../public/js/functions/busquedaBinaria');
 
 const controlador = {
    position: (req, res) => {
@@ -102,13 +103,13 @@ const controlador = {
 
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
-      let cantPartidos = 5;
-      let team1;
-      let team2;
+      let cantPartidos = fixture[0].partidos.length;
+      let posteam1;
+      let posteam2;
       let newFecha = req.body;
-      let newPartidos = [
+      let newPartidos = 
          {
-            fecha: 5,
+            fecha: fixture.length + 1,
             dia: "",
             partidos: [
                {
@@ -163,20 +164,21 @@ const controlador = {
             ],
             libre:""
          }
-      ]
-
+      console.log(newPartidos.fecha)
+      posiciones.ordenarXNombre(teams);
       for(let i = 0; i < cantPartidos; i++){
          newPartidos.id = i + 1;
-         newPartidos.partidos[i].horario = newFecha.time; 
-         newPartidos.partidos[i].cancha = newFecha.cancha;
-         team1 = teams.filter(team => team.name == newFecha.name);
-         team2 = teams.filter(team => team.name == newFecha.name);
-         newPartidos.partidos[i].equipo1 = team1.id;
-         newPartidos.partidos[i].equipo2 = team2.id
+         newPartidos.partidos[i].horario = newFecha.time[i]; 
+         newPartidos.partidos[i].cancha = newFecha.cancha[i];
+         posteam1 = buscarTeams.busquedaBinaria(newFecha.team1[i],teams)
+         posteam2 = buscarTeams.busquedaBinaria(newFecha.team2[i],teams)
+         newPartidos.partidos[i].equipo1 = teams[posteam1].id;
+         newPartidos.partidos[i].equipo2 = teams[posteam2].id;
       }
-      let free = teams.fliter(team => team.name == newFecha.libre);
-      newPartidos.libre = free.id;
-      console.log(newPartidos);
+      let posfree = buscarTeams.busquedaBinaria(newFecha.libre,teams);
+      newPartidos.libre = teams[posfree].id;
+      fixture.push(newPartidos);
+      dbJson.setUsers(fixture_db, fixture);
       res.redirect('/data/resultados/fecha');
    }
 }
