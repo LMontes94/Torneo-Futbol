@@ -9,7 +9,7 @@ router.get('/fairplay',dataController.cards);
 router.get('/estadisticas',dataController.statistics);
 router.get('/resultados',dataController.results);
 router.get('/equipos/:id',dataController.squad);
-
+router.get('/equipos/:id/create',dataController.createPlayer);
 
 router.get('/resultados/fecha',dataController.fecha);
 router.get('/resultados/fecha/:id',dataController.fechaId);
@@ -19,6 +19,7 @@ router.get('/resultados/fecha/:id/:idMatch/edit',dataController.showMatch);
 router.get('/resultados/agregar',dataController.agregarFecha);
 router.post('/resultados/agregar',dataController.cargarFecha);
 //router.put('/resultados/fecha/:id/:idMatch/edit',dataController.editMatchs);
+router.post('/equipos/:id/create',dataController.savePlayer);
 
 router.get('/equipos/:id/edit',dataController.editSquad);
 //router.put('/equipos/:id',dataController.actualizarSquad);

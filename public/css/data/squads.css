@@ -89,17 +89,20 @@ main {
 
 .data-players{
   display: grid;
-  grid-template-columns: repeat(6, 70px);
-  grid-template-rows: repeat(2,40px); 
+  grid-template-columns: repeat(8, 70px);
+  grid-template-rows: repeat(13,40px); 
   text-align: center;
   align-items: center;  
   justify-content: center;
   margin: 10px auto;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
+.save-player{
+  height: 30px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--third);
+  color: var(--light);
+  border-radius: 5px;
 }

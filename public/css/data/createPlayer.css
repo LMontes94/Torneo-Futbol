@@ -1,0 +1,38 @@
+.info-players h3 {
+  margin-top: 30px;
+}
+
+.info{
+    font-size: 20px;
+  font-weight: bold;
+  margin: 8px auto;
+}
+
+.info input{
+    width: 200px;
+   height: 20px;
+   border-radius: 5px;
+}
+
+.info .dni{
+   margin-left: 35px;
+}
+
+.info .date{
+  margin-left: -25px;
+}
+
+.data-players {
+  background-color: var(--secondary);
+  width: 50%;
+  height: 300px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 5px 7px var(--dark2);
+}
+
+.boton{
+    margin: 15px auto;
+}

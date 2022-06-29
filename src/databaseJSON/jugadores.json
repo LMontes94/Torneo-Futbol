@@ -1,0 +1,220 @@
+[
+  {
+    "idTeam": 1,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      }
+    ]
+  },
+  {
+    "idTeam": 2,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 3,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 4,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 5,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 6,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 7,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 8,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 9,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 10,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idTeam": 11,
+    "jugadores": [
+      {
+        "idJugador": 0,
+        "apellido": "",
+        "nombre": "",
+        "dni": "",
+        "birthday": "",
+        "pj": 0,
+        "goles": 0,
+        "cards": [
+          {
+            "yellow": 0,
+            "red": 0
+          }
+        ]
+      }
+    ]
+  }
+]

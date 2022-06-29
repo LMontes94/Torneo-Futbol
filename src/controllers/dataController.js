@@ -1,47 +1,50 @@
 const path = require('path');
 const dbJson = require('../databaseJSON/database');
 const resultados = require('../../public/js/functions/cargarResults');
-const posiciones = require('../../public/js/functions/ordenarTeams');
 const fixture_db = path.resolve(__dirname, '../databaseJSON/fixture.json');
 const teams_db = path.join(__dirname, '../databaseJSON/teams.json');
+const players_db = path.join(__dirname, '../databaseJSON/jugadores.json');
+const posiciones = require('../../public/js/functions/ordenarTeams');
 const buscarTeams = require('../../public/js/functions/busquedaBinaria');
 
 const controlador = {
    position: (req, res) => {
       var teams = dbJson.getUsers(teams_db);
       posiciones.ordenarTeams(teams);
-      res.render(path.join(__dirname, '../views/data/position'), { teams: teams });
+      res.render(path.join(__dirname, '../views/data/results/position'), { teams: teams });
    },
    calendar: (req, res) => {
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
-      res.render(path.join(__dirname, '../views/data/calendar'), { teams: teams, fixture: fixture });
+      res.render(path.join(__dirname, '../views/data/fecha/calendar'), { teams: teams, fixture: fixture });
    },
    teams: (req, res) => {
       const teams = dbJson.getUsers(teams_db);
-      res.render(path.join(__dirname, '../views/data/teams'), { teams: teams });
+      res.render(path.join(__dirname, '../views/data/teams/teams'), { teams: teams });
    },
    cards: (req, res) => {
-      res.render(path.join(__dirname, '../views/data/cards'));
+      res.render(path.join(__dirname, '../views/data/teams/cards'));
    },
    statistics: (req, res) => {
-      res.render(path.join(__dirname, '../views/data/statistics'));
+      res.render(path.join(__dirname, '../views/data/teams/statistics'));
    },
    squad: (req, res) => {
 
       const archivoTeams = dbJson.getUsers(teams_db);
+      const archivoPlayers = dbJson.getUsers(players_db);
+      const players = archivoPlayers[req.params.id - 1];
       const team = archivoTeams[req.params.id - 1];
-      res.render(path.join(__dirname, '../views/data/squads'), { team: team })
+      res.render(path.join(__dirname, '../views/data/teams/squads'), { team: team, players: players })
    },
    results: (req, res) => {
 
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
-      res.render(path.join(__dirname, '../views/data/results.ejs'), { teams: teams, fixture: fixture });
+      res.render(path.join(__dirname, '../views/data/results/results.ejs'), { teams: teams, fixture: fixture });
    },
    fecha: (req, res) => {
       const fixture = dbJson.getUsers(fixture_db);
-      res.render(path.join(__dirname, '../views/data/fechas.ejs'), { fixture: fixture });
+      res.render(path.join(__dirname, '../views/data/fecha/fechas.ejs'), { fixture: fixture });
    },
    fechaId: (req, res) => {
 
@@ -49,7 +52,7 @@ const controlador = {
       const fixture = dbJson.getUsers(fixture_db);
 
       const fecha = fixture[req.params.id - 1];
-      res.render(path.join(__dirname, '../views/data/resultsEdit.ejs'), { teams: teams, fecha: fecha });
+      res.render(path.join(__dirname, '../views/data/results/resultsEdit.ejs'), { teams: teams, fecha: fecha });
    },
    matchsId: (req, res) => {
 
@@ -59,7 +62,7 @@ const controlador = {
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/matchsId.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
+      res.render(path.join(__dirname, '../views/data/matchs/matchsId.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
    },
    saveMatchs: (req, res) => {
 
@@ -83,13 +86,13 @@ const controlador = {
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
+      res.render(path.join(__dirname, '../views/data/matchs/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
    },
    editSquad: (req, res) => {
 
       const archivoTeams = dbJson.getUsers(teams_db);
       const team = archivoTeams[req.params.id - 1];
-      res.render(path.join(__dirname, '../views/data/squads'), { team: team })
+      res.render(path.join(__dirname, '../views/data/teams/squads'), { team: team })
    },
    agregarFecha: (req, res) => {
 
@@ -97,7 +100,7 @@ const controlador = {
       const fixture = dbJson.getUsers(fixture_db);
 
       const partidos = fixture[0].partidos.length;
-      res.render(path.join(__dirname, '../views/data/addFecha.ejs'), { teams: teams, partidos: partidos });
+      res.render(path.join(__dirname, '../views/data/fecha/addFecha.ejs'), { teams: teams, partidos: partidos });
    },
    cargarFecha: (req, res) => {
 
@@ -107,79 +110,118 @@ const controlador = {
       let posteam1;
       let posteam2;
       let newFecha = req.body;
-      let newPartidos = 
-         {
-            fecha: fixture.length + 1,
-            dia: "",
-            partidos: [
-               {
-                  id: 1,
-                  horario: "",
-                  cancha: "",
-                  equipo1: "",
-                  equipo2: "",
-                  golteam1: "",
-                  golteam2: "",
-                  jugado: false
-               },
-               {
-                  id: 2,
-                  horario: "",
-                  cancha: "",
-                  equipo1: "",
-                  equipo2: "",
-                  golteam1: "",
-                  golteam2: "",
-                  jugado: false
-               },
-               {
-                  id: 3,
-                  horario: "",
-                  cancha: "",
-                  equipo1: "",
-                  equipo2: "",
-                  golteam1: "",
-                  golteam2: "",
-                  jugado: false
-               },{
-                  id: 4,
-                  horario: "",
-                  cancha: "",
-                  equipo1: "",
-                  equipo2: "",
-                  golteam1: "",
-                  golteam2: "",
-                  jugado: false
-               },
-               {
-                  id: 5,
-                  horario: "",
-                  cancha: "",
-                  equipo1: "",
-                  equipo2: "",
-                  golteam1: "",
-                  golteam2: "",
-                  jugado: false
-               }
-            ],
-            libre:""
-         }
-      console.log(newPartidos.fecha)
+      let newPartidos =
+      {
+         fecha: fixture.length + 1,
+         dia: "",
+         partidos: [
+            {
+               id: 1,
+               horario: "",
+               cancha: "",
+               equipo1: "",
+               equipo2: "",
+               golteam1: "",
+               golteam2: "",
+               jugado: false
+            },
+            {
+               id: 2,
+               horario: "",
+               cancha: "",
+               equipo1: "",
+               equipo2: "",
+               golteam1: "",
+               golteam2: "",
+               jugado: false
+            },
+            {
+               id: 3,
+               horario: "",
+               cancha: "",
+               equipo1: "",
+               equipo2: "",
+               golteam1: "",
+               golteam2: "",
+               jugado: false
+            }, {
+               id: 4,
+               horario: "",
+               cancha: "",
+               equipo1: "",
+               equipo2: "",
+               golteam1: "",
+               golteam2: "",
+               jugado: false
+            },
+            {
+               id: 5,
+               horario: "",
+               cancha: "",
+               equipo1: "",
+               equipo2: "",
+               golteam1: "",
+               golteam2: "",
+               jugado: false
+            }
+         ],
+         libre: ""
+      }
       posiciones.ordenarXNombre(teams);
-      for(let i = 0; i < cantPartidos; i++){
+      for (let i = 0; i < cantPartidos; i++) {
          newPartidos.id = i + 1;
-         newPartidos.partidos[i].horario = newFecha.time[i]; 
+         newPartidos.partidos[i].horario = newFecha.time[i];
          newPartidos.partidos[i].cancha = newFecha.cancha[i];
-         posteam1 = buscarTeams.busquedaBinaria(newFecha.team1[i],teams)
-         posteam2 = buscarTeams.busquedaBinaria(newFecha.team2[i],teams)
+         posteam1 = buscarTeams.busquedaBinaria(newFecha.team1[i], teams)
+         posteam2 = buscarTeams.busquedaBinaria(newFecha.team2[i], teams)
          newPartidos.partidos[i].equipo1 = teams[posteam1].id;
          newPartidos.partidos[i].equipo2 = teams[posteam2].id;
       }
-      let posfree = buscarTeams.busquedaBinaria(newFecha.libre,teams);
+      let posfree = buscarTeams.busquedaBinaria(newFecha.libre, teams);
       newPartidos.libre = teams[posfree].id;
       fixture.push(newPartidos);
       dbJson.setUsers(fixture_db, fixture);
       res.redirect('/data/resultados/fecha');
+   },
+   createPlayer: (req, res) => {
+
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+      const team = teams[req.params.id - 1];
+      const partidos = fixture[0].partidos.length;
+      res.render(path.join(__dirname, '../views/data/teams/createPlayer.ejs'), { team: team, partidos: partidos });
+   },
+   savePlayer: (req, res) => {
+
+      let plantilla = dbJson.getUsers(players_db);
+      let data = req.body;
+      
+      let lastId = 1;
+      if (lastId !== plantilla[req.params.id - 1].jugadores.length) {
+          lastId = plantilla[req.params.id - 1].jugadores.length;
+          lastId++;
+      }
+      let newPlayer = {
+         idJugador: lastId,
+         apellido: "",
+         nombre: "",
+         dni: "",
+         birthday: "",
+         pj: 0,
+         goles: 0,
+         cards:
+         {
+            "yellow": 0,
+            "red": 0
+         }
+      }
+      console.log(req.body)
+      newPlayer.apellido = data.last;
+      newPlayer.nombre = data.name;
+      newPlayer.dni = data.dni;
+      newPlayer.birthday = data.date;
+      console.log(newPlayer);
+      res.redirect('/data/equipos/' + req.params.id);
    }
 }
 module.exports = controlador;
