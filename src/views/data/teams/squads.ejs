@@ -37,18 +37,20 @@
     <h2>90º Aniversario</h2>
     <main>
         <div class="logo">
-            <% if(team.logo === ""){%>
+            <% if(team.logo==="" ){%>
                 <img src="/img/ST90anos.jpg" alt="logo-<%=team.name%>">
-            <% } else {%>
-            <img src="<% team.logo%>" alt="logo-<%=team.name%>">
-            <% } %>
+                <% } else {%>
+                    <img src="<% team.logo%>" alt="logo-<%=team.name%>">
+                    <% } %>
         </div>
         <div class="team">
             <%= team.name%>
         </div>
         <div class="tshirt">
             <label class="casaca">Color de camiseta:</label>
-           <label><%= team.tshirt%></label>
+            <label>
+                <%= team.tshirt%>
+            </label>
         </div>
         <div class="stats">
             <label>Gaf</label>
@@ -72,26 +74,51 @@
             <h3>Jugadores</h3>
             <div class="data-players">
                 <label>#</label>
+                <label>Apellido</label>
                 <label>Nombre</label>
                 <label for="">DNI</label>
                 <label for="">Fecha Nac.</label>
                 <label>Pj</label>
                 <label>Goles</label>
-                <label>Amarillas</label>
-                <label>Rojas</label>
-                <% for( let i=0; i < players.jugadores.length;i++){ %>
-                    <div class="players">
-                        <%= players.jugadores[i].id%>
+                <label>A</label>
+                <label>R</label>
+            </div> 
+            <% for( let i=0; i < players.jugadores.length;i++){ %>
+                <div class="player">
+                    <span>
+                        <%= players.jugadores[i].idJugador%>
+                    </span>
+                    <span>
+                        <%= players.jugadores[i].apellido%>
+                    </span>
+                    <span>
                         <%= players.jugadores[i].nombre%>
+                    </span>
+                    <span>
                         <%= players.jugadores[i].dni%>
+                    </span>
+                    <span>
                         <%= players.jugadores[i].birthday%>
+                    </span>
+                    <span>
+                        <%= players.jugadores[i].pj%>
+                    </span>
+                    <span>
                         <%= players.jugadores[i].goles%>
+                    </span>
+                    <span>
+                        <%= players.jugadores[i].cards.yellow%>
+                    </span>
+                    <span>
+                        <%= players.jugadores[i].cards.red%>
+                    </span>
+                </div>
+                <% } %>
+               
+                    <div class="boton">
+                        <a href="/data/equipos/<%= team.id %>/create"><input type="submit" value="Cargar Jugador"
+                                class="save-player"></a>
                     </div>
-                    <% } %>
-            </div>
-            <div class="boton">
-                <a href="/data/equipos/<%= team.id %>/create"><input type="submit" value="Cargar Jugador" class="save-player"></a>
-            </div>
         </section>
     </main>
     <footer>Copyright LM5</footer>

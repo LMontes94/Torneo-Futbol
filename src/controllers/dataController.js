@@ -215,12 +215,17 @@ const controlador = {
             "red": 0
          }
       }
-      console.log(req.body)
       newPlayer.apellido = data.last;
       newPlayer.nombre = data.name;
       newPlayer.dni = data.dni;
       newPlayer.birthday = data.date;
-      console.log(newPlayer);
+      
+      plantilla[req.params.id -1].jugadores.push(newPlayer);
+      if(plantilla[req.params.id -1] .jugadores[0].idJugador == 0){
+          plantilla[req.params.id -1].jugadores.splice(0,1);
+      }
+     
+      dbJson.setUsers(players_db,plantilla);
       res.redirect('/data/equipos/' + req.params.id);
    }
 }

@@ -14,6 +14,7 @@ h2 {
 h3 {
   font-size: 22px;
   text-align: center;
+  margin: 20px;
 }
 
 main {
@@ -75,26 +76,48 @@ main {
 
 .stats{
   display: grid;
-  grid-template-columns: repeat(4, 40px);
-  grid-template-rows: repeat(2,40px);
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(1,60px);
   text-align: center;
   align-items: center;  
   padding: 5px;
   margin: 10px auto;
 }
 
-.info-players{
-  width: 100%;
+.info-players {
+  width: 70%;
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  box-shadow: 10px 7px 5px 10px var(--dark2);
 }
 
 .data-players{
   display: grid;
-  grid-template-columns: repeat(8, 70px);
-  grid-template-rows: repeat(13,40px); 
-  text-align: center;
-  align-items: center;  
+  grid-template-columns: repeat(9,75px);
+  grid-template-rows: repeat(1,40px);
   justify-content: center;
-  margin: 10px auto;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid var(--dark);
+  background-color: var(--light);
+  width: 100%;
+  margin: auto;
+}
+
+.player{
+  display: grid;
+  grid-template-columns: repeat(9,75px);
+  grid-template-rows: repeat(1,40px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--dark);
+  color: var(--light);
+  width: 100%;
+  margin: auto;
 }
 
 .save-player{
@@ -105,4 +128,12 @@ main {
   background-color: var(--third);
   color: var(--light);
   border-radius: 5px;
+  margin-top: 25px;
 }
+/*
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}*/

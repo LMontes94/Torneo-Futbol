@@ -1,3 +1,9 @@
+.team{
+  width: 60%;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
 .info-players h3 {
   margin-top: 30px;
 }
@@ -23,7 +29,6 @@
 }
 
 .data-players {
-  background-color: var(--secondary);
   width: 50%;
   height: 300px;
   margin: 30px auto;
@@ -35,4 +40,8 @@
 
 .boton{
     margin: 15px auto;
+}
+
+footer {
+ display: none;
 }

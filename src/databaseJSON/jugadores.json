@@ -81,19 +81,69 @@
     "idTeam": 5,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Zubiarrain",
+        "nombre": "Juan Ignacio",
+        "dni": "37560201",
+        "birthday": "1994-03-28",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Meneghetti",
+        "nombre": "Rodrigo",
+        "dni": "31727364",
+        "birthday": "1985-07-16",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Fernandez Valencia",
+        "nombre": "Manuel",
+        "dni": "33857871",
+        "birthday": "1988-05-24",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Rocha Ponte",
+        "nombre": "Juan Cruz",
+        "dni": "34400306",
+        "birthday": "1989-01-25",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Cardin",
+        "nombre": "Gustavo",
+        "dni": "34390627",
+        "birthday": "1989-02-28",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
