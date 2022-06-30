@@ -196,10 +196,12 @@ const controlador = {
       let plantilla = dbJson.getUsers(players_db);
       let data = req.body;
       
-      let lastId = 1;
-      if (lastId !== plantilla[req.params.id - 1].jugadores.length) {
+      let lastId = 0;
+      if (plantilla[req.params.id -1] .jugadores[0].idJugador != 0) {
           lastId = plantilla[req.params.id - 1].jugadores.length;
           lastId++;
+      }else{
+         lastId = 1;
       }
       let newPlayer = {
          idJugador: lastId,

@@ -3,11 +3,115 @@
     "idTeam": 1,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Lasagna",
+        "nombre": "Franco",
+        "dni": "35983664",
+        "birthday": "1991-03-22",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Diaz",
+        "nombre": "Mauricio",
+        "dni": "35607570",
+        "birthday": "1990-10-01",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Martinez",
+        "nombre": "Mariano",
+        "dni": "35359800",
+        "birthday": "1990-10-15",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Rodriguez",
+        "nombre": "Ariel",
+        "dni": "35363939",
+        "birthday": "1990-11-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Massa",
+        "nombre": "Franco",
+        "dni": "35426794",
+        "birthday": "1990-08-28",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Araujo",
+        "nombre": "Enzo",
+        "dni": "37221563",
+        "birthday": "1993-03-17",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Perez",
+        "nombre": "Julian",
+        "dni": "35983909",
+        "birthday": "1991-06-24",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Fernandez",
+        "nombre": "Ezequiel",
+        "dni": "36169647",
+        "birthday": "1991-06-04",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 9,
+        "apellido": "Tomasone",
+        "nombre": "Agustin",
+        "dni": "37274021",
+        "birthday": "1993-01-11",
         "pj": 0,
         "goles": 0,
         "cards": {
@@ -21,19 +125,121 @@
     "idTeam": 2,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Petrochelli",
+        "nombre": "Guido",
+        "dni": "38858047",
+        "birthday": "1995-06-21",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Rodriguez",
+        "nombre": "Lucas",
+        "dni": "38857808",
+        "birthday": "1995-03-30",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Perez",
+        "nombre": "Ivan",
+        "dni": "39056305",
+        "birthday": "1995-05-04",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Herr",
+        "nombre": "Gustavo",
+        "dni": "38616325",
+        "birthday": "1994-12-04",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Martinez",
+        "nombre": "Facundo",
+        "dni": "39100648",
+        "birthday": "1995-06-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Bisceglia",
+        "nombre": "Juan Pablo",
+        "dni": "38890461",
+        "birthday": "1995-02-23",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Bruera",
+        "nombre": "Alejo",
+        "dni": "38563528",
+        "birthday": "1994-10-14",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Hoffmann",
+        "nombre": "Klaus",
+        "dni": "38857868",
+        "birthday": "1995-05-03",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 9,
+        "apellido": "Iarusso",
+        "nombre": "Emiliano",
+        "dni": "38563523",
+        "birthday": "1994-10-17",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -41,19 +247,121 @@
     "idTeam": 3,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Dal Zotto",
+        "nombre": "Agustín",
+        "dni": "41646138",
+        "birthday": "1998-11-10",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Valdemarin",
+        "nombre": "Tiago",
+        "dni": "41915087",
+        "birthday": "1999-05-19",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Carrer ",
+        "nombre": "Juan Ignacio",
+        "dni": "41565368",
+        "birthday": "1998-12-09",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Proud",
+        "nombre": "Tomas",
+        "dni": "41835633",
+        "birthday": "1999-04-16",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Forti",
+        "nombre": "Federico",
+        "dni": "41710384",
+        "birthday": "1999-02-09",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Lattanti",
+        "nombre": "Federico",
+        "dni": "41834107",
+        "birthday": "1999-04-19",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Chindamo",
+        "nombre": "Juan",
+        "dni": "41758865",
+        "birthday": "1999-02-22",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Fernández",
+        "nombre": "Mateo",
+        "dni": "41469731",
+        "birthday": "1998-09-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 9,
+        "apellido": "Ramon",
+        "nombre": "Alejo",
+        "dni": "41200609",
+        "birthday": "1998-07-22",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -61,19 +369,160 @@
     "idTeam": 4,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "De La Rua",
+        "nombre": "Sebastian",
+        "dni": "38258887",
+        "birthday": "1994-05-21",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Castro Gil",
+        "nombre": "Juan José",
+        "dni": "37007890",
+        "birthday": "1992-07-23",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Cerda",
+        "nombre": "Gonzalo",
+        "dni": "37754829",
+        "birthday": "1993-07-06",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Cerda",
+        "nombre": "Pablo",
+        "dni": "36276331",
+        "birthday": "1991-12-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Kirschner",
+        "nombre": "Nahuel",
+        "dni": "37905357",
+        "birthday": "1993-10-30",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Kirschner",
+        "nombre": "Federico",
+        "dni": "40399153",
+        "birthday": "1997-05-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Camusso",
+        "nombre": "Gonzalo",
+        "dni": "36644060",
+        "birthday": "1991-11-19",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Scardina",
+        "nombre": "Luciano",
+        "dni": "36081687",
+        "birthday": "1991-11-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 9,
+        "apellido": "Devia",
+        "nombre": "Agustín",
+        "dni": "38996941",
+        "birthday": "1995-05-01",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 10,
+        "apellido": "Villalba",
+        "nombre": "Matías",
+        "dni": "37376124",
+        "birthday": "1993-03-02",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 11,
+        "apellido": "Larre",
+        "nombre": "Martin",
+        "dni": "36942797",
+        "birthday": "1992-12-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 12,
+        "apellido": "Sanz",
+        "nombre": "Mariano",
+        "dni": "37608954",
+        "birthday": "1993-06-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -85,7 +534,7 @@
         "apellido": "Zubiarrain",
         "nombre": "Juan Ignacio",
         "dni": "37560201",
-        "birthday": "1994-03-28",
+        "birthday": "1993-03-28",
         "pj": 0,
         "goles": 0,
         "cards": {
@@ -144,6 +593,45 @@
           "yellow": 0,
           "red": 0
         }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Picchi",
+        "nombre": "Santiago",
+        "dni": "34023139",
+        "birthday": "1988-08-18",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Moreno",
+        "nombre": "Leonardo Jose",
+        "dni": "36727299",
+        "birthday": "1992-04-24",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Gardelini",
+        "nombre": "Ruben Andres",
+        "dni": "37680022",
+        "birthday": "1993-02-05",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -151,19 +639,134 @@
     "idTeam": 6,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Blanco",
+        "nombre": "Ramiro",
+        "dni": "44788478",
+        "birthday": "2003-04-13",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Miranda",
+        "nombre": "Facundo",
+        "dni": "44641004",
+        "birthday": "2002-12-15",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "De Carlos",
+        "nombre": "Fausto",
+        "dni": "44713246",
+        "birthday": "2003-03-01",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Gallinaro",
+        "nombre": "Ivan",
+        "dni": "45201660",
+        "birthday": "2003-09-13",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Proud",
+        "nombre": "Matías",
+        "dni": "44891048",
+        "birthday": "2003-07-08",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Graña",
+        "nombre": "Juan Martin",
+        "dni": "44452042",
+        "birthday": "2002-09-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Tarrazo",
+        "nombre": "Juan Pablo",
+        "dni": "44486897",
+        "birthday": "2002-09-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Rizzi",
+        "nombre": "Santiago Agustin",
+        "dni": "44833292",
+        "birthday": "2003-06-04",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 9,
+        "apellido": "Marchese ",
+        "nombre": "Roman",
+        "dni": "44547699",
+        "birthday": "2003-03-21",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 10,
+        "apellido": "Hure simiele",
+        "nombre": "Wenceslao",
+        "dni": "44837904",
+        "birthday": "2003-05-24",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -171,19 +774,108 @@
     "idTeam": 7,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Dal Zotto",
+        "nombre": "Tomas",
+        "dni": "45238487",
+        "birthday": "2003-12-26",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Lattanti",
+        "nombre": "Ramiro",
+        "dni": "45747839",
+        "birthday": "2004-05-18",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Dikgoz",
+        "nombre": "Tomas",
+        "dni": "45283337",
+        "birthday": "2004-02-13",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Daus",
+        "nombre": "Lautaro",
+        "dni": "45478196",
+        "birthday": "2004-02-11",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "De Battista",
+        "nombre": "Mateo",
+        "dni": "45354342",
+        "birthday": "2004-05-20",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Villaverde",
+        "nombre": "Ramiro",
+        "dni": "45419851",
+        "birthday": "2004-01-02",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Carabelli",
+        "nombre": "Dante",
+        "dni": "46026605",
+        "birthday": "2004-04-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Romero",
+        "nombre": "Matias",
+        "dni": "45305198",
+        "birthday": "2003-12-15",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -191,19 +883,121 @@
     "idTeam": 8,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Campuzano",
+        "nombre": "Elías Lautaro",
+        "dni": "42899509",
+        "birthday": "2000-09-26",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Merlach",
+        "nombre": "Santiago",
+        "dni": "43034297",
+        "birthday": "2001-02-14",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Sciarrillo",
+        "nombre": "Tomás",
+        "dni": "43101710",
+        "birthday": "2001-01-28",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Biach",
+        "nombre": "Santiago",
+        "dni": "43402975",
+        "birthday": "2001-04-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "León",
+        "nombre": "Federico",
+        "dni": "43448253",
+        "birthday": "2001-08-14",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Castro Andrieu",
+        "nombre": "Marcos",
+        "dni": "42087679",
+        "birthday": "1999-08-21",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Oviedo",
+        "nombre": "Augusto",
+        "dni": "44159065",
+        "birthday": "2002-06-01",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Tosi",
+        "nombre": "Lautaro",
+        "dni": "42950948",
+        "birthday": "2001-05-31",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 9,
+        "apellido": "Canestrari",
+        "nombre": "Franco",
+        "dni": "43175151",
+        "birthday": "2001-04-30",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -211,19 +1005,160 @@
     "idTeam": 9,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Navarro",
+        "nombre": "Luis",
+        "dni": "35,275,036",
+        "birthday": "1990-07-28",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Villa Conde",
+        "nombre": "Gonzalo",
+        "dni": "36,593,403",
+        "birthday": "1991-11-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Broglio",
+        "nombre": "Gonzalo",
+        "dni": "36,689,952",
+        "birthday": "1992-07-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Ramos Venturini",
+        "nombre": "Ramiro",
+        "dni": "33,910,094",
+        "birthday": "1989-04-09",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Cerruti",
+        "nombre": "Leonel",
+        "dni": "32,265,560",
+        "birthday": "1986-04-17",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Díaz",
+        "nombre": "Federico",
+        "dni": "36,726,930",
+        "birthday": "1992-02-15",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Herrera",
+        "nombre": "Marcelo",
+        "dni": "24,128,227",
+        "birthday": "1973-08-03",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Bozzi",
+        "nombre": "Juan Pablo",
+        "dni": "36,593,427",
+        "birthday": "1991-12-05",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 9,
+        "apellido": "Stilio",
+        "nombre": "Alejo",
+        "dni": "37,786,199",
+        "birthday": "1993-08-06",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 10,
+        "apellido": "Villalba",
+        "nombre": "Facundo",
+        "dni": "38,277,180",
+        "birthday": "1994-06-03",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 11,
+        "apellido": "Bontempo",
+        "nombre": "Gonzalo",
+        "dni": "40,513,692",
+        "birthday": "1997-06-30",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 12,
+        "apellido": "Montes",
+        "nombre": "Lucas",
+        "dni": "38201176",
+        "birthday": "1994-04-08",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -231,19 +1166,95 @@
     "idTeam": 10,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Febré",
+        "nombre": "Pedro",
+        "dni": "43994301",
+        "birthday": "2002-04-24",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Febré",
+        "nombre": "Lucio",
+        "dni": "42586962",
+        "birthday": "2000-04-07",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Matas",
+        "nombre": "Lucas",
+        "dni": "43446402",
+        "birthday": "2001-07-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Arduino",
+        "nombre": "Bautista",
+        "dni": "43441475",
+        "birthday": "2001-07-10",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Fourcade",
+        "nombre": "Santiago",
+        "dni": "42399302",
+        "birthday": "2000-01-14",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Propato",
+        "nombre": "Gianfranco",
+        "dni": "42201132",
+        "birthday": "1999-10-11",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Valentini",
+        "nombre": "Gianluca",
+        "dni": "42077806",
+        "birthday": "1999-08-12",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   },
@@ -251,19 +1262,108 @@
     "idTeam": 11,
     "jugadores": [
       {
-        "idJugador": 0,
-        "apellido": "",
-        "nombre": "",
-        "dni": "",
-        "birthday": "",
+        "idJugador": 1,
+        "apellido": "Vidal",
+        "nombre": "Franco Nicolas",
+        "dni": "38,277,269",
+        "birthday": "1994-06-21",
         "pj": 0,
         "goles": 0,
-        "cards": [
-          {
-            "yellow": 0,
-            "red": 0
-          }
-        ]
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 2,
+        "apellido": "Vidal",
+        "nombre": "Lucas Tomás",
+        "dni": "40,192,622",
+        "birthday": "1997-04-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 3,
+        "apellido": "Simian",
+        "nombre": "Marcos",
+        "dni": "40,997,398",
+        "birthday": "1998-03-18",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 4,
+        "apellido": "Febré",
+        "nombre": "Tomás Andres",
+        "dni": "41,028,853",
+        "birthday": "1998-02-24",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 5,
+        "apellido": "Benito",
+        "nombre": "Franco",
+        "dni": "41,100,363",
+        "birthday": "1998-04-30",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 6,
+        "apellido": "Gonzalez",
+        "nombre": "Juan Ignacio",
+        "dni": "36,905,050",
+        "birthday": "1992-06-26",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 7,
+        "apellido": "Montero",
+        "nombre": "Facundo",
+        "dni": "37,986,246",
+        "birthday": "1994-01-05",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
+      },
+      {
+        "idJugador": 8,
+        "apellido": "Taboada",
+        "nombre": "Federico Julián",
+        "dni": "38,277,017",
+        "birthday": "1994-03-02",
+        "pj": 0,
+        "goles": 0,
+        "cards": {
+          "yellow": 0,
+          "red": 0
+        }
       }
     ]
   }

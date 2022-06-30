@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="/css/data/squads.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -36,6 +39,7 @@
     <h1 class="titulo"> Torneo ex Alumnos Santa Teresita</h1>
     <h2>90º Aniversario</h2>
     <main>
+        <section class="data-team">
         <div class="logo">
             <% if(team.logo==="" ){%>
                 <img src="/img/ST90anos.jpg" alt="logo-<%=team.name%>">
@@ -47,29 +51,30 @@
             <%= team.name%>
         </div>
         <div class="tshirt">
-            <label class="casaca">Color de camiseta:</label>
-            <label>
+            <label class="title-casaca">Color de camiseta:</label>
+            <label class="casaca">
                 <%= team.tshirt%>
             </label>
         </div>
         <div class="stats">
-            <label>Gaf</label>
-            <label>Gec</label>
-            <label>DF</label>
-            <label>Puntos</label>
-            <label>
+            <label class="title-stats">Gaf</label>
+            <label class="title-stats">Gec</label>
+            <label class="title-stats">DF</label>
+            <label class="title-stats">Puntos</label>
+            <label class="data-stats">
                 <%= team.gaf%>
             </label>
-            <label>
+            <label  class="data-stats">
                 <%= team.gec%>
             </label>
-            <label>
+            <label  class="data-stats">
                 <%= team.df%>
             </label>
-            <label>
+            <label  class="data-stats">
                 <%= team.points%>
             </label>
         </div>
+    </section>
         <section class="info-players">
             <h3>Jugadores</h3>
             <div class="data-players">
@@ -82,7 +87,7 @@
                 <label>Goles</label>
                 <label>A</label>
                 <label>R</label>
-            </div> 
+            </div>
             <% for( let i=0; i < players.jugadores.length;i++){ %>
                 <div class="player">
                     <span>
@@ -114,7 +119,7 @@
                     </span>
                 </div>
                 <% } %>
-               
+
                     <div class="boton">
                         <a href="/data/equipos/<%= team.id %>/create"><input type="submit" value="Cargar Jugador"
                                 class="save-player"></a>
