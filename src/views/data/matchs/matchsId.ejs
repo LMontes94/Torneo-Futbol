@@ -48,12 +48,34 @@
                 <form action="/data/resultados/fecha/<%= fecha.fecha%>/<%= nroMatch%>" method="POST"
                     class="fecha-results">
 
-                    <%= teams[(match.equipo1)-1].name%>
-                    <input type="text" name="results1" class="goals">
-                    <input type="text" name="results2" class="goals">
-                    <%= teams[(match.equipo2)-1].name%>
+                    <span>
+                        <%= teams[(match.equipo1)-1].name%>
+                    </span>
+                    <input type="text" name="results1" class="goals" required>
+                    <input type="text" name="results2" class="goals" required>
+                    <span>
+                        <%= teams[(match.equipo2)-1].name%>
+                    </span>
+                    <div class="killers">
+                        <label for="">Goleadores</label>
+                        <select name="killer" class="goleador">
+                            <% for (let j=0; j < players[(match.equipo1)-1].jugadores.length; j++) { %>
+                                <option value="<%=players[(match.equipo1)-1].jugadores[j].nombre%>">
+                                    <%=players[(match.equipo1)-1].jugadores[j].apellido%>
+                                        <%=players[(match.equipo1)-1].jugadores[j].nombre%>
+                                </option>
+                                <% } %>
+                        </select>
+                        <select name="killer" class="goleador">
+                            <% for (let j=0; j < players[(match.equipo2)-1].jugadores.length; j++) { %>
+                                <option value="<%= players[(match.equipo2)-1].jugadores[j].nombre%>">
+                                    <%=players[(match.equipo2)-1].jugadores[j].apellido%>
+                                        <%= players[(match.equipo2)-1].jugadores[j].nombre%>
+                                </option>
+                                <% } %>
+                        </select>
+                    </div>
                     <input type="submit" value="Cargar" class="edit-results">
-
                 </form>
         </section>
     </main>

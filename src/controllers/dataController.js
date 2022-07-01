@@ -58,11 +58,12 @@ const controlador = {
 
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
+      const players = dbJson.getUsers(players_db);
+
       const nroMatch = req.params.idMatch;
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
-
-      res.render(path.join(__dirname, '../views/data/matchs/matchsId.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
+      res.render(path.join(__dirname, '../views/data/matchs/matchsId.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch,players:players });
    },
    saveMatchs: (req, res) => {
 
@@ -86,7 +87,17 @@ const controlador = {
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/matchs/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
+      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
+   },
+   editMatchs:(req, res) => {
+
+      const teams = dbJson.getUsers(teams_db);
+      const fixture = dbJson.getUsers(fixture_db);
+      const nroMatch = req.params.idMatch;
+      const fecha = fixture[req.params.id - 1];
+      const match = fecha.partidos[nroMatch];
+
+      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
    },
    editSquad: (req, res) => {
 
@@ -189,7 +200,7 @@ const controlador = {
       const fixture = dbJson.getUsers(fixture_db);
       const team = teams[req.params.id - 1];
       const partidos = fixture[0].partidos.length;
-      res.render(path.join(__dirname, '../views/data/teams/createPlayer.ejs'), { team: team, partidos: partidos });
+      res.render(path.join(__dirname, '../views/data/teams/createPlayer.ejs'), { team: team, partidos: partidos, teams: teams });
    },
    savePlayer: (req, res) => {
 

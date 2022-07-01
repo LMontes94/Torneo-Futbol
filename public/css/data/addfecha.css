@@ -24,6 +24,15 @@ label{
     font-size: 18px;
 }
 
+.cancha, .day input, .name-team {
+  height: 25px;
+  border-radius: 5px;
+}
+
+input{
+  border-radius: 5px;
+}
+
 .load-date{
     height: 30px;
     width: 150px;

@@ -56,15 +56,37 @@
                     <label for="">Horario</label>
                     <input type="time" name="time" required>
                     <label for="cancha">Cancha</label>
-                    <input type="text" name="cancha" required>
-                    <label for="team1">Equipos</label>
-                    <input type="text" name="team1" required>
-                    <input type="text" name="team2" required>
+                    <select name="cancha" class="cancha">
+                        <option value="Gimnasio">Gimnasio</option>
+                        <option value="Patio">Patio</option>
+                    </select>
+                    <label for="team">Equipos</label>
+                    <select name="team1" class="name-team">
+                        <% for (let j=0; j < teams.length; j++) { %>
+                            <option value="<%= teams[j].name%>">
+                                <%= teams[j].name%>
+                            </option>
+                            <% } %>
+                    </select>
+                    <select name="team2" class="name-team">
+                        <% for (let j=0; j < teams.length; j++) { %>
+                            <option value="<%= teams[j].name%>">
+                                <%= teams[j].name%>
+                            </option>
+                            <% } %>
+                    </select>
+
                 </div>
                 <% } %>
                     <div class="free">
                         <label for="libre">Libre</label>
-                        <input type="text" name="libre">
+                        <select name="libre" class="name-team">
+                            <% for (let j=0; j < teams.length; j++) { %>
+                                <option value="<%= teams[j].name%>">
+                                    <%= teams[j].name%>
+                                </option>
+                                <% } %>
+                        </select>
                     </div>
                     <div class="boton">
                         <input type="submit" value="Cargar Fecha" class="load-date">

@@ -1,18 +1,17 @@
 .fecha-results{
     display: flex;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 .partidos{
    margin: 8px;
 }
 
-.equipo{
+.equipo,.results{
     text-align: center;
 }
-.results{
-    text-align: center;
-}
+
 .goals{
   width: 20px;
 }
@@ -31,6 +30,10 @@
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+}
+
+span, input{
+  margin: 5px
 }
 
 footer {
