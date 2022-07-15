@@ -1,6 +1,6 @@
 main {
     width: 80%;
-    height: 500px;
+    /*height: 500px;*/
     padding: 10px;
     margin: 15px auto;
     background-color: var(--light);
@@ -8,7 +8,7 @@ main {
     box-shadow: 5px 10px 5px 10px var(--dark2);
 }
 
-.ingreso,.horarios,.inscripcion,.pago-cancha,.obligatorio,.premios,.mensaje,.saludo{
+.ingreso,.horarios,.inscripcion,.pago-cancha,.obligatorio,.premios,.mensaje,.saludo,.definicion{
    font-size: 18px;
    margin: 30px;
 }
@@ -16,6 +16,8 @@ main {
 .saludo{
     font-weight: bold;
 }
+
+
 /*footer {
     position: absolute;
     bottom: 0;
