@@ -1,12 +1,54 @@
+.fecha{
+   height: 60%;
+   align-items: start;
+}
+
+h4{
+  display: flex;
+  align-items: start;
+  margin: 15px;
+  font-size: 24px;
+}
+
+.fecha span{
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 20px;
+}/**/
+
 .fecha-results{
+    width: 80%;
     display: flex;
-    padding: 5px;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .fecha-results input{
   width: 20px;
   height: 20px;
+}
+
+.fecha-results .gol{
+  width: 27px;
+  height: 20px;
+}
+
+.data{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.data-teams{
+  display: flex;
+  flex-direction: row;
+}
+
+.results{
+  width: 100%;
+  margin: auto;
 }
 
 .partidos{
@@ -17,15 +59,13 @@
     text-align: center;
 }
 
-.goals{
-  width: 20px;
+.team{
+  font-size: 18px;
 }
 
-.edit{
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  width: 60px;
+.team-goals{
+   text-align: center;
+   font-weight: bold;
 }
 
 .fecha-results .edit-results{
@@ -37,17 +77,31 @@
   font-weight: bold;
 }
 
-span, input{
+.boton-result{
+  display: flex;
+  align-items: flex-end;
+}
+
+input{
    margin: 5px
 }
 
-.title{
-  width: 100%;
+.tittle{
+  font-size: 20px;
 }
 
-.players{
-   display: flex;
+.statics{
+  margin: 10px;
+}
 
+.statics table th{
+  border: 1px solid var(--dark)
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 /*footer {

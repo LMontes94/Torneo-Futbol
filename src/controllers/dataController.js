@@ -83,11 +83,13 @@ const controlador = {
 
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
+      const players = dbJson.getUsers(players_db);
+
       const nroMatch = req.params.idMatch;
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
+      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch,players:players });
    },
    editMatchs:(req, res) => {
 
