@@ -4,6 +4,8 @@ const resultados = require('../../public/js/functions/cargarResults');
 const fixture_db = path.resolve(__dirname, '../databaseJSON/fixture.json');
 const teams_db = path.join(__dirname, '../databaseJSON/teams.json');
 const players_db = path.join(__dirname, '../databaseJSON/jugadores.json');
+const killers_db = path.join(__dirname, '../databaseJSON/goleadores.json');
+const amonestados_db = path.join(__dirname, '../databaseJSON/amonestados.json');
 const posiciones = require('../../public/js/functions/ordenarTeams');
 const buscarTeams = require('../../public/js/functions/busquedaBinaria');
 
@@ -63,20 +65,115 @@ const controlador = {
       const nroMatch = req.params.idMatch;
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
-      res.render(path.join(__dirname, '../views/data/matchs/matchsId.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch,players:players });
+      res.render(path.join(__dirname, '../views/data/matchs/matchsId.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch, players: players });
    },
    saveMatchs: (req, res) => {
 
-      var fixture = dbJson.getUsers(fixture_db);
-      var goalsteam1 = req.body.results1;
-      var goalsteam2 = req.body.results2;
+      const fixture = dbJson.getUsers(fixture_db);
+      const jugadores = dbJson.getUsers(players_db);
+      const killers = dbJson.getUsers(killers_db);
+      const amonestados = dbJson.getUsers(amonestados_db);
+      var goalsteam1 = req.body.goalsT1;
+      var goalsteam2 = req.body.goalsT2;
       var posFixture = req.params.id - 1;
       var posPartido = req.params.idMatch;
-
+      let newKiller =
+      {
+         teamId: "",
+         apellido: "",
+         nombre: "",
+         goles:""
+      }
+      let newAmonestado =
+      {
+         teamId: "",
+         apellido: "",
+         nombre: "",
+         amarilla:"",
+         roja:""
+      }
+      
       fixture[posFixture].partidos[posPartido].golteam1 = goalsteam1;
       fixture[posFixture].partidos[posPartido].golteam2 = goalsteam2;
-      fixture = dbJson.setUsers(fixture_db, fixture);
-      resultados.cargarResults(posFixture, posPartido);
+      
+      cantJugadores = jugadores[(fixture[posFixture].partidos[posPartido].equipo1)-1].length
+      for (let i = 0; i < cantJugadores; i++) {
+         let goalPlayer = 0;
+         let j = 0;
+         let k = 0;
+         if (req.body.goals >=1) {
+            goalPlayer = jugadores[(fixture[posFixture].partidos[posPartido].equipo1)-1].jugadores[i].goles
+            jugadores[(fixture[posFixture].partidos[posPartido].equipo1)-1].jugadores[i].goles = goalPlayer + req.body.goals;
+             newKiller.teamId = fixture[posFixture].partidos[posPartido].equipo1;
+             newKiller.apellido = req.body.apellido;
+             newKiller.nombre = req.body.nombre;
+             newKiller.goles = newKiller.goles + req.body.goals;
+             fixture[posFixture].partidos[posPartido].klliersT1.push(newKiller);
+             killers.push(newKiller);
+         }
+         if(req.body.amarrilla == true){
+            var cantAmarilla = jugadores[(fixture[posFixture].partidos[posPartido].equipo1)-1].jugadores[i].cards.yellow;
+            jugadores[(fixture[posFixture].partidos[posPartido].equipo1)-1].jugadores[i].cards.yellow = cantAmarilla + 1;
+            newAmonestado.teamId = fixture[posFixture].partidos[posPartido].equipo1;
+            newAmonestado.apellido = req.body.apellido;
+            newAmonestado.nombre = req.body.nombre;
+            newAmonestado.amarilla = newAmonestado.amarilla + 1;
+            fixture[posFixture].partidos[posPartido].amonestadosT1.push(newAmonestado);
+            amonestados.push(newAmonestado);
+         }
+         if(req.body.roja == true){
+            var cantRoja = jugadores[(fixture[posFixture].partidos[posPartido].equipo1)-1].jugadores[i].cards.red;
+            jugadores[(fixture[posFixture].partidos[posPartido].equipo1)-1].jugadores[i].cards.red = cantRoja + 1;
+            newAmonestado.teamId = fixture[posFixture].partidos[posPartido].equipo1;
+            newAmonestado.apellido = req.body.apellido;
+            newAmonestador.nombre = req.body.nombre;
+            newAmonestado.roja = newAmonestado.roja + 1;
+            fixture[posFixture].partidos[posPartido].amonestadosT1.push(newAmonestado);
+            amonestados.push(newAmonestado);
+         }
+        
+      }
+      cantJugadores = jugadores[(fixture[posFixture].partidos[posPartido].equipo2)-1].length
+      for (let i = 0; i < cantJugadores; i++) {
+         let goalPlayer = 0;
+         let j = 0;
+         let k = 0;
+         if (req.body.goals >=1) {
+             goalPlayer = jugadores[(fixture[posFixture].partidos[posPartido].equipo2)-1].jugadores[i].goles
+             jugadores[(fixture[posFixture].partidos[posPartido].equipo2)-1].jugadores[i].goles = goalPlayer + req.body.goals;
+             newKiller.teamId = fixture[posFixture].partidos[posPartido].equipo2;
+             newKiller.apellido = req.body.apellido;
+             newKiller.nombre = req.body.nombre;
+             newKiller.goles = newKiller.goles + req.body.goals;
+             fixture[posFixture].partidos[posPartido].klliersT2.push(newKiller);
+             killers.push(newKiller);
+         }
+         if(req.body.amarrilla == true){
+            var cantAmarilla = jugadores[(fixture[posFixture].partidos[posPartido].equipo2)-1].jugadores[i].cards.yellow;
+            jugadores[(fixture[posFixture].partidos[posPartido].equipo2)-1].jugadores[i].cards.yellow = cantAmarilla + 1;
+            newAmonestado.teamId = fixture[posFixture].partidos[posPartido].equipo2;
+            newAmonestado.apellido = req.body.apellido;
+            newAmonestado.nombre = req.body.nombre;
+            newAmonestado.amarilla = newAmonestado.amarilla + 1;
+            fixture[posFixture].partidos[posPartido].amonestadosT2.push(newAmonestado);
+            amonestados.push(newAmonestado);
+         }
+         if(req.body.roja == true){
+            var cantRoja = jugadores[(fixture[posFixture].partidos[posPartido].equipo2)-1].jugadores[i].cards.red;
+            jugadores[(fixture[posFixture].partidos[posPartido].equipo2)-1].jugadores[i].cards.red = cantRoja + 1;
+            newAmonestado.teamId = fixture[posFixture].partidos[posPartido].equipo2;
+            newAmonestado.apellido = req.body.apellido;
+            newAmonestador.nombre = req.body.nombre;
+            newAmonestado.roja = newAmonestado.roja + 1;
+            fixture[posFixture].partidos[posPartido].amonestadosT2.push(newAmonestado);
+            amonestados.push(newAmonestado);
+         }
+        
+      }
+      console.log(killers)
+      console.log(amonestados)
+      //fixture = dbJson.setUsers(fixture_db, fixture);
+      //resultados.cargarResults(posFixture, posPartido);
       res.redirect('/data/resultados');
    },
    showMatch: (req, res) => {
@@ -89,9 +186,9 @@ const controlador = {
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch,players:players });
+      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch, players: players });
    },
-   editMatchs:(req, res) => {
+   editMatchs: (req, res) => {
 
       const teams = dbJson.getUsers(teams_db);
       const fixture = dbJson.getUsers(fixture_db);
@@ -99,7 +196,7 @@ const controlador = {
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
 
-      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch });
+      res.redirect('/data/resultados');
    },
    editSquad: (req, res) => {
 
@@ -208,12 +305,12 @@ const controlador = {
 
       let plantilla = dbJson.getUsers(players_db);
       let data = req.body;
-      
+
       let lastId = 0;
-      if (plantilla[req.params.id -1] .jugadores[0].idJugador != 0) {
-          lastId = plantilla[req.params.id - 1].jugadores.length;
-          lastId++;
-      }else{
+      if (plantilla[req.params.id - 1].jugadores[0].idJugador != 0) {
+         lastId = plantilla[req.params.id - 1].jugadores.length;
+         lastId++;
+      } else {
          lastId = 1;
       }
       let newPlayer = {
@@ -234,13 +331,13 @@ const controlador = {
       newPlayer.nombre = data.name;
       newPlayer.dni = data.dni;
       newPlayer.birthday = data.date;
-      
-      plantilla[req.params.id -1].jugadores.push(newPlayer);
-      if(plantilla[req.params.id -1] .jugadores[0].idJugador == 0){
-          plantilla[req.params.id -1].jugadores.splice(0,1);
+
+      plantilla[req.params.id - 1].jugadores.push(newPlayer);
+      if (plantilla[req.params.id - 1].jugadores[0].idJugador == 0) {
+         plantilla[req.params.id - 1].jugadores.splice(0, 1);
       }
-     
-      dbJson.setUsers(players_db,plantilla);
+
+      dbJson.setUsers(players_db, plantilla);
       res.redirect('/data/equipos/' + req.params.id);
    }
 }

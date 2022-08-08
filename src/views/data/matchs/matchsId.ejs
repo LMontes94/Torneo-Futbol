@@ -54,8 +54,8 @@
                                     <th>
                                         <%= teams[(match.equipo1)-1].name%>
                                     </th>
-                                    <th><input type="text" name="results1" class="goals" required></th>
-                                    <th><input type="text" name="results2" class="goals" required></th>
+                                    <th><input type="text" name="goalsT1" class="goals" required></th>
+                                    <th><input type="text" name="goalsT2" class="goals" required></th>
                                     <th>
                                         <%= teams[(match.equipo2)-1].name%>
                                     </th>
@@ -74,8 +74,8 @@
                                     <% for (let j=0; j < players[(match.equipo1)-1].jugadores.length; j++) { %>
                                         <tr>
                                             <th class="player-name">
-                                                <%=players[(match.equipo1)-1].jugadores[j].apellido%>
-                                                    <%=players[(match.equipo1)-1].jugadores[j].nombre%>
+                                                <label for="" name="apellido"><%=players[(match.equipo1)-1].jugadores[j].apellido%></label>
+                                                <label for="" name="nombre"><%=players[(match.equipo1)-1].jugadores[j].nombre%></label>
                                             </th>
                                             <th>
                                                 <input type="number" name="goals" class="gol" min="1" max="10">

@@ -9,7 +9,6 @@ module.exports = {
         var fixture = dbJson.getUsers(fixture_db);
         var teams = dbJson.getUsers(teams_db);
 
-        debugger;
         teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].pj++;
         teams[(fixture[posFixture].partidos[posPartido].equipo2) - 1].pj++;
         teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gaf = parseInt(teams[(fixture[posFixture].partidos[posPartido].equipo1) - 1].gaf) + parseInt(fixture[posFixture].partidos[posPartido].golteam1);
