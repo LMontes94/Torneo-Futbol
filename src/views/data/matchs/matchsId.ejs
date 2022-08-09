@@ -78,7 +78,7 @@
                                                 <label for="" name="nombre"><%=players[(match.equipo1)-1].jugadores[j].nombre%></label>
                                             </th>
                                             <th>
-                                                <input type="number" name="goals" class="gol" min="1" max="10">
+                                                <input type="number" name="goalsT1" class="gol" min="1" max="10">
                                             </th>
                                             <th>
                                                 <input type="checkbox" name="amarilla">
@@ -105,13 +105,13 @@
                                                     <%=players[(match.equipo2)-1].jugadores[j].nombre%>
                                             </th>
                                             <th>
-                                                <input type="number" name="goals" class="gol" min="1" max="10">
+                                                <input type="number" name="goalsT2" class="gol" min="1" max="10">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="amarilla">
+                                                <input type="checkbox" name="amarillaT2">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="roja">
+                                                <input type="checkbox" name="rojaT2">
                                             </th>
                                         </tr>
                                         <% } %>
