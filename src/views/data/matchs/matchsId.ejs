@@ -54,8 +54,8 @@
                                     <th>
                                         <%= teams[(match.equipo1)-1].name%>
                                     </th>
-                                    <th><input type="text" name="goalsT1" class="goals" required></th>
-                                    <th><input type="text" name="goalsT2" class="goals" required></th>
+                                    <th><input type="text" name="goalsTeam1" class="goals" required></th>
+                                    <th><input type="text" name="goalsTeam2" class="goals" required></th>
                                     <th>
                                         <%= teams[(match.equipo2)-1].name%>
                                     </th>
@@ -81,10 +81,10 @@
                                                 <input type="number" name="goalsT1" class="gol" min="1" max="10">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="amarilla">
+                                                <input type="checkbox" name="amarillaT1">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="roja">
+                                                <input type="checkbox" name="rojaT1">
                                             </th>
                                         </tr>
                                         <% } %>
