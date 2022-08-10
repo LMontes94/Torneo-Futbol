@@ -81,10 +81,10 @@
                                                 <input type="number" name="goalsT1" class="gol" min="1" max="10">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="amarillaT1">
+                                                <input type="checkbox" name="amarillaT1" value="<%=players[(match.equipo1)-1].jugadores[j].idJugador%>">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="rojaT1">
+                                                <input type="checkbox" name="rojaT1" value="<%=players[(match.equipo1)-1].jugadores[j].idJugador%>">
                                             </th>
                                         </tr>
                                         <% } %>
@@ -108,10 +108,10 @@
                                                 <input type="number" name="goalsT2" class="gol" min="1" max="10">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="amarillaT2">
+                                                <input type="checkbox" name="amarillaT2" value="<%=players[(match.equipo2)-1].jugadores[j].idJugador%>">
                                             </th>
                                             <th>
-                                                <input type="checkbox" name="rojaT2">
+                                                <input type="checkbox" name="rojaT2" value="<%=players[(match.equipo2)-1].jugadores[j].idJugador%>">
                                             </th>
                                         </tr>
                                         <% } %>
