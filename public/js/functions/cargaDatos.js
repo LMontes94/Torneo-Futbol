@@ -91,6 +91,7 @@ module.exports = {
         };
         let k = 0;
         let l = 0;
+        amonestadosXTeam = [];
         for (let i = 0; i < cantJugadores; i++) {
             newAmonestado =
             {
@@ -100,6 +101,7 @@ module.exports = {
                 amarilla: 0,
                 roja: 0
             };
+          
             if (amarillasXTeam && rojaXTeam) {
                 if (rojaXTeam[l] == jugadores.jugadores[i].idJugador &&
                     amarillasXTeam[k] == jugadores.jugadores[i].idJugador) {
@@ -140,7 +142,7 @@ module.exports = {
                     l++
                 }
             }
-            console.log(amonestados)
+            //console.log(amonestados)
         }
         console.log("---------------------------------------------------")
         console.log(amonestadosXTeam)

@@ -99,20 +99,20 @@ const controlador = {
       let cantJugadores = jugadores[(fixture[posFixture].partidos[posPartido].equipo1) - 1].jugadores.length;     
       
       resultados.cargarKillers(jugadores[(fixture[posFixture].partidos[posPartido].equipo1) - 1],
-      cantJugadores,req.body.goalsT1,fixture[posFixture].partidos[posPartido].killersT1);
+      cantJugadores,req.body.goalsT1,fixture[posFixture].partidos[posPartido].gameKillers);
       
       resultados.cargarAmonestados(jugadores[(fixture[posFixture].partidos[posPartido].equipo1) - 1],
       cantJugadores, req.body.amarillaT1,req.body.rojaT1,
-      fixture[posFixture].partidos[posPartido].amonestadosT1);
+      fixture[posFixture].partidos[posPartido].gameAmonestados);
 
       cantJugadores = jugadores[(fixture[posFixture].partidos[posPartido].equipo2) - 1].jugadores.length;
       
       resultados.cargarKillers(jugadores[(fixture[posFixture].partidos[posPartido].equipo2) - 1],
-      cantJugadores,req.body.goalsT2,fixture[posFixture].partidos[posPartido].killersT2)
+      cantJugadores,req.body.goalsT2,fixture[posFixture].partidos[posPartido].gameKillers)
       
       resultados.cargarAmonestados(jugadores[(fixture[posFixture].partidos[posPartido].equipo2) - 1],
       cantJugadores, req.body.amarillaT2,req.body.rojaT2,
-      fixture[posFixture].partidos[posPartido].amonestadosT2);
+      fixture[posFixture].partidos[posPartido].gameAmonestados);
       
       //fixture = dbJson.setUsers(fixture_db, fixture);
       //resultados.cargarResults(posFixture, posPartido);

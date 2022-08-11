@@ -396,10 +396,8 @@
         "equipo2": 1,
         "golteam1": "19",
         "golteam2": "1",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
