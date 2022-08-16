@@ -11,10 +11,8 @@
         "equipo2": 6,
         "golteam1": "5",
         "golteam2": "2",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -25,10 +23,8 @@
         "equipo2": 4,
         "golteam1": "5",
         "golteam2": "12",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -39,10 +35,8 @@
         "equipo2": 8,
         "golteam1": "8",
         "golteam2": "4",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -53,10 +47,8 @@
         "equipo2": 9,
         "golteam1": "1",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -67,10 +59,8 @@
         "equipo2": 10,
         "golteam1": "3",
         "golteam2": "12",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       }
     ],
@@ -88,10 +78,8 @@
         "equipo2": 5,
         "golteam1": "3",
         "golteam2": "6",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -102,10 +90,8 @@
         "equipo2": 6,
         "golteam1": "3",
         "golteam2": "5",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -116,10 +102,8 @@
         "equipo2": 7,
         "golteam1": "8",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -130,10 +114,8 @@
         "equipo2": 8,
         "golteam1": "2",
         "golteam2": "5",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -144,10 +126,8 @@
         "equipo2": 9,
         "golteam1": "6",
         "golteam2": "1",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       }
     ],
@@ -165,10 +145,8 @@
         "equipo2": 4,
         "golteam1": "1",
         "golteam2": "7",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -179,10 +157,8 @@
         "equipo2": 5,
         "golteam1": "2",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -193,10 +169,8 @@
         "equipo2": 6,
         "golteam1": "3",
         "golteam2": "1",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -207,10 +181,8 @@
         "equipo2": 7,
         "golteam1": "7",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -221,10 +193,8 @@
         "equipo2": 8,
         "golteam1": "5",
         "golteam2": "1",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       }
     ],
@@ -242,10 +212,8 @@
         "equipo2": 3,
         "golteam1": "2",
         "golteam2": "0",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -256,10 +224,8 @@
         "equipo2": 4,
         "golteam1": "4",
         "golteam2": "4",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -270,10 +236,8 @@
         "equipo2": 5,
         "golteam1": "3",
         "golteam2": "2",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -284,10 +248,8 @@
         "equipo2": 6,
         "golteam1": "7",
         "golteam2": "1",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -298,10 +260,8 @@
         "equipo2": 7,
         "golteam1": "3",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       }
     ],
@@ -319,10 +279,8 @@
         "equipo2": 2,
         "golteam1": "5",
         "golteam2": "2",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -333,10 +291,8 @@
         "equipo2": 3,
         "golteam1": "7",
         "golteam2": "5",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -347,10 +303,8 @@
         "equipo2": 4,
         "golteam1": "3",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -361,10 +315,8 @@
         "equipo2": 5,
         "golteam1": "4",
         "golteam2": "8",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       },
       {
@@ -375,10 +327,8 @@
         "equipo2": 6,
         "golteam1": "1",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": true
       }
     ],
@@ -408,10 +358,8 @@
         "equipo2": 2,
         "golteam1": "4",
         "golteam2": "1",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -422,10 +370,8 @@
         "equipo2": 3,
         "golteam1": "0",
         "golteam2": "3",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -436,10 +382,8 @@
         "equipo2": 4,
         "golteam1": "1",
         "golteam2": "5",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -450,10 +394,8 @@
         "equipo2": 5,
         "golteam1": "6",
         "golteam2": "9",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       }
     ],
@@ -471,10 +413,8 @@
         "equipo2": 11,
         "golteam1": "3",
         "golteam2": "5",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amonestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -485,10 +425,8 @@
         "equipo2": 1,
         "golteam1": "1",
         "golteam2": "2",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -499,10 +437,8 @@
         "equipo2": 2,
         "golteam1": "0",
         "golteam2": "9",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -513,10 +449,8 @@
         "equipo2": 3,
         "golteam1": "2",
         "golteam2": "5",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -527,10 +461,8 @@
         "equipo2": 4,
         "golteam1": "6",
         "golteam2": "5",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       }
     ],
@@ -548,10 +480,8 @@
         "equipo2": 10,
         "golteam1": "",
         "golteam2": "",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -562,10 +492,8 @@
         "equipo2": 11,
         "golteam1": "",
         "golteam2": "",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -576,10 +504,8 @@
         "equipo2": 1,
         "golteam1": "",
         "golteam2": "",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -590,10 +516,8 @@
         "equipo2": 2,
         "golteam1": "",
         "golteam2": "",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       },
       {
@@ -604,10 +528,8 @@
         "equipo2": 3,
         "golteam1": "",
         "golteam2": "",
-        "killersT1":[],
-        "killersT2":[],
-        "amonestadosT1":[],
-        "amontestadosT2":[],
+        "gameKillers":[],
+        "gameAmonestados":[],
         "jugado": false
       }
     ],

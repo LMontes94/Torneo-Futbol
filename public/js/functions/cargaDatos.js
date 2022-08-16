@@ -4,7 +4,6 @@ const dbJson = require('../../../src/databaseJSON/database');
 const fixture_db = path.resolve(__dirname, '../../../src/databaseJSON/fixture.json');
 const teams_db = path.join(__dirname, '../../../src/databaseJSON/teams.json');
 const killers_db = path.join(__dirname, '../../../src/databaseJSON/goleadores.json');
-const players_db = path.join(__dirname, '../../../src/databaseJSON/jugadores.json')
 const amonestados_db = path.join(__dirname, '../../../src/databaseJSON/amonestados.json')
 module.exports = {
     cargarResults: (posFixture, posPartido) => {
@@ -41,8 +40,7 @@ module.exports = {
         teams = dbJson.setUsers(teams_db, teams);
     },
     cargarKillers(jugadores, cantJugadores, goalsXPlayer, killersXTeam) {
-        const fixture = dbJson.getUsers(fixture_db);
-        const players = dbJson.getUsers(players_db);
+      
         const killers = dbJson.getUsers(killers_db);
 
         let newKiller =
@@ -76,9 +74,10 @@ module.exports = {
             }
             j++;
         }
+
+        dbJson.setUsers(killers_db,killers);
     },
     cargarAmonestados(jugadores, cantJugadores, amarillasXTeam, rojaXTeam,amonestadosXTeam) {
-        const fixture = dbJson.getUsers(fixture_db);
         const amonestados = dbJson.getUsers(amonestados_db);
 
         let newAmonestado =
@@ -142,9 +141,7 @@ module.exports = {
                     l++
                 }
             }
-            //console.log(amonestados)
         }
-        console.log("---------------------------------------------------")
-        console.log(amonestadosXTeam)
+        dbJson.setUsers(amonestados_db,amonestados);
     }
 }

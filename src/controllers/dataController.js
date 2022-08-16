@@ -71,8 +71,7 @@ const controlador = {
 
       const fixture = dbJson.getUsers(fixture_db);
       const jugadores = dbJson.getUsers(players_db);
-      const killers = dbJson.getUsers(killers_db);
-      const amonestados = dbJson.getUsers(amonestados_db);
+    
       var goalsteam1 = req.body.goalsTeam1;
       var goalsteam2 = req.body.goalsTeam2;
       var posFixture = req.params.id - 1;
