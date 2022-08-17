@@ -126,8 +126,10 @@ const controlador = {
       const nroMatch = req.params.idMatch;
       const fecha = fixture[req.params.id - 1];
       const match = fecha.partidos[nroMatch];
+      const gameKillers = fecha.partidos[nroMatch].gameKillers;
+      const gameAmonestados = fecha.partidos[nroMatch].gameAmonestados;
 
-      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch, players: players });
+      res.render(path.join(__dirname, '../views/data/matchs/editmatch.ejs'), { teams: teams, fecha: fecha, match: match, nroMatch: nroMatch, players: players, gameKillers: gameKillers, gameAmonestados:gameAmonestados });
    },
    editMatchs: (req, res) => {
 

@@ -45,118 +45,129 @@
                 FECHA <%= fecha.fecha%>
             </h4>
             <span>
-                <%= fecha.dia%>
-            </span>
-            <form action="/data/resultados/fecha/<%= fecha.fecha%>/<%= nroMatch%>/edit" method="POST"
-                class="fecha-results">
+               <%= fecha.dia%>  
+            </span>      
+                <form action="/data/resultados/fecha/<%= fecha.fecha%>/<%= nroMatch%>/edit" method="POST"
+                    class="fecha-results">
 
-                <div class="data">
-                    <div class="result">
-                        <table>
-                            <tr>
-                                <th>
-                                    <%= teams[(match.equipo1)-1].name%>
-                                </th>
-                                <th><input type="text" name="goalsTeam1" class="goals" required></th>
-                                <th><input type="text" name="goalsTeam2" class="goals" required></th>
-                                <th>
-                                    <%= teams[(match.equipo2)-1].name%>
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="data-teams">
-                        <div class="statics">
+                    <div class="data">
+                        <div class="result">
                             <table>
                                 <tr>
-                                    <th class="tittle">Plantel</th>
-                                    <th class="tittle">Goles</th>
-                                    <th class="tittle">A</th>
-                                    <th class="tittle">R</th>
+                                    <th class="team">
+                                        <%= teams[(match.equipo1)-1].name%>
+                                    </th>
+                                    <th ><input type="text" name="goalsT1" class="team-goals"value="<%= fecha.partidos[nroMatch].golteam1%>"></th>
+                                    <th ><input type="text" name="goalsT2" class="team-goals"value="<%= fecha.partidos[nroMatch].golteam2%>"></th>
+                                    <th class="team">
+                                        <%= teams[(match.equipo2)-1].name%>
+                                    </th>
                                 </tr>
-                                <% let i=0;%>
+                            </table>
+                        </div>
+                        <div class="data-teams">
+                            <div class="statics">
+                                <table>
+                                    <tr>
+                                        <th class="tittle">Plantel</th>
+                                        <th class="tittle">Goles</th>
+                                        <th class="tittle">A</th>
+                                        <th class="tittle">R</th>
+                                    </tr>
+                                   
+                                    <% let i = 0, k = 0%>
                                     <% for (let j=0; j < players[(match.equipo1)-1].jugadores.length; j++) { %>
                                         <tr>
                                             <th class="player-name">
-                                                <label for="" name="apellido">
-                                                    <%=players[(match.equipo1)-1].jugadores[j].apellido%>
-                                                </label>
-                                                <label for="" name="nombre">
-                                                    <%=players[(match.equipo1)-1].jugadores[j].nombre%>
-                                                </label>
+                                                <%=players[(match.equipo1)-1].jugadores[j].apellido%>
+                                                <%=players[(match.equipo1)-1].jugadores[j].nombre%>
+                                            </th> 
+                                            <% if(gameKillers.length !== 0){ %> 
+                                                  <%if(gameKillers[i].nombre == players[(match.equipo1)-1].jugadores[j].nombre && gameKillers[i].apellido == players[(match.equipo1)-1].jugadores[j].apellido){%>
+                                                    <th>
+                                                      <input type="number" name="goalsT1" class="gol" min="1" max="10" value="<%= gameKillers[i].goles%>">
+                                                    </th>
+                                                  <%}else{%>
+                                                     <th>
+                                                       <input type="number" name="goalsT1" class="gol" min="1" max="10">
+                                                     </th>
+                                                    <%}%>  
+                                            <%}else{%> 
+                                                <th>
+                                                    <input type="number" name="goalsT1" class="gol" min="1" max="10">
+                                                </th>
+                                            <%}%>   
+                                            <% if(gameAmonestados.length !== 0){ %> 
+                                                <% if(gameAmonestados[k].nombre == players[(match.equipo1)-1].jugadores[j].nombre && gameAmonestados[k].apellido == players[(match.equipo1)-1].jugadores[j].apellido){%>
+                                                       <%if(gameAmonestados[k].amarilla == 1){%>
+                                                        <th>
+                                                            <input type="checkbox" name="amarilla" checked>
+                                                        </th>
+                                                        <th>
+                                                            <input type="checkbox" name="roja">
+                                                          </th>
+                                                       <%}else{%>
+                                                        <th>
+                                                            <input type="checkbox" name="amarilla">
+                                                          </th>
+                                                          <th>
+                                                            <input type="checkbox" name="roja" checked>
+                                                          </th>
+                                                       <%}%>
+                                                <%}else{%>
+                                                    <th>
+                                                      <input type="checkbox" name="amarilla">
+                                                    </th>
+                                                    <th>
+                                                      <input type="checkbox" name="roja">
+                                                    </th>
+                                                 <%}%>
+                                            <%} else {%>
+                                                <th>
+                                                    <input type="checkbox" name="amarilla">
+                                                </th>
+                                                <th>
+                                                    <input type="checkbox" name="roja">
+                                                </th>
+                                            <%}%>   
+                                        </tr>
+                                        <% i++; k++;%>
+                                        <% } %>
+                                </table>
+                            </div>
+                            <div class="statics">
+                                <table>
+                                    <tr>
+                                        <th class="tittle">Plantel</th>
+                                        <th class="tittle">Goles</th>
+                                        <th class="tittle">A</th>
+                                        <th class="tittle">R</th>
+                                    </tr>
+                                    <% for (let j=0; j < players[(match.equipo2)-1].jugadores.length; j++) { %>
+                                        <tr>
+                                            <th class="player-name">
+                                                <%=players[(match.equipo2)-1].jugadores[j].apellido%>
+                                                    <%=players[(match.equipo2)-1].jugadores[j].nombre%>
                                             </th>
-                                            <% if(match.gameKillers[K].teamId == players[(match.equipo1)-1].idTeam){%>
-                                                <% if(match.gameKillers[K].nombre == players[(match.equipo1)-1].jugadores[j].nombre
-                                                    &&
-                                                    match.gameKillers[K].apellido==players[(match.equipo1)-1].jugadores[j].apellido){
-                                                    %>
-                                                    <th>
-                                                        <input type="number" name="goalsT1" class="gol" min="1"
-                                                            max="10">
-                                                    </th>
-                                                    <th>
-                                                        <input type="checkbox" name="amarillaT1"
-                                                            value="<%=players[(match.equipo1)-1].jugadores[j].idJugador%>">
-                                                    </th>
-                                                    <th>
-                                                        <input type="checkbox" name="rojaT1"
-                                                            value="<%=players[(match.equipo1)-1].jugadores[j].idJugador%>">
-                                                    </th>
-                                                    <%}%>
-                                                <%} else %>
-                                                            <th>
-                                                                <input type="number" name="goalsT1" class="gol" min="1"
-                                                                    max="10">
-                                                            </th>
-                                                            <th>
-                                                                <input type="checkbox" name="amarillaT1"
-                                                                    value="<%=players[(match.equipo1)-1].jugadores[j].idJugador%>">
-                                                            </th>
-                                                            <th>
-                                                                <input type="checkbox" name="rojaT1"
-                                                                    value="<%=players[(match.equipo1)-1].jugadores[j].idJugador%>">
-                                                            </th>
-                                                            <%}%>
-
+                                            <th>
+                                                <input type="number" name="goals" class="gol" min="1" max="10">
+                                            </th>
+                                            <th>
+                                                <input type="checkbox" name="amarilla">
+                                            </th>
+                                            <th>
+                                                <input type="checkbox" name="roja">
+                                            </th>
                                         </tr>
                                         <% } %>
-                            </table>
-                        </div>
-                        <div class="statics">
-                            <table>
-                                <tr>
-                                    <th class="tittle">Plantel</th>
-                                    <th class="tittle">Goles</th>
-                                    <th class="tittle">A</th>
-                                    <th class="tittle">R</th>
-                                </tr>
-                                <% for (let j=0; j < players[(match.equipo2)-1].jugadores.length; j++) { %>
-                                    <tr>
-                                        <th class="player-name">
-                                            <%=players[(match.equipo2)-1].jugadores[j].apellido%>
-                                                <%=players[(match.equipo2)-1].jugadores[j].nombre%>
-                                        </th>
-                                        <th>
-                                            <input type="number" name="goalsT2" class="gol" min="1" max="10">
-                                        </th>
-                                        <th>
-                                            <input type="checkbox" name="amarillaT2"
-                                                value="<%=players[(match.equipo2)-1].jugadores[j].idJugador%>">
-                                        </th>
-                                        <th>
-                                            <input type="checkbox" name="rojaT2"
-                                                value="<%=players[(match.equipo2)-1].jugadores[j].idJugador%>">
-                                        </th>
-                                    </tr>
-                                    <% } %>
-                            </table>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="boton-result">
-                    <input type="submit" value="Editar" class="edit-results">
-                </div>
-            </form>
+                    <div class="boton-result">
+                        <input type="submit" value="Editar" class="edit-results">
+                    </div>
+                </form>
         </section>
     </main>
 
